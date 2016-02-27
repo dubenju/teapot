@@ -1,0 +1,849 @@
+* {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+body {
+	font-family: Verdana, Arial, "‘v‘Μ"; font-size: 12px;
+}
+strong {
+	color: rgb(0, 0, 0); font-family: "”χ?‰λόK"; font-size: 14px; font-weight: 800;
+}
+body#homefirst div#maincontent {
+	font-family: "”χ?‰λόK";
+}
+div#maincontent h1 {
+	font-family: "”χ?‰λόK";
+}
+div#maincontent h2 {
+	font-family: "”χ?‰λόK";
+}
+div#sidebar div#ad h2 {
+	font-family: "”χ?‰λόK";
+}
+pre {
+	font-family: Consolas, "Courier New", Courier, monospace;
+}
+pre code {
+	font-family: Consolas, "Courier New", Courier, monospace;
+}
+div#maincontent input {
+	font-family: Consolas, "Courier New", Courier, monospace;
+}
+div#maincontent select {
+	font-family: Consolas, "Courier New", Courier, monospace;
+}
+div#maincontent textarea {
+	font-family: Consolas, "Courier New", Courier, monospace;
+}
+h2 {
+	font-weight: bold;
+}
+h3 {
+	font-weight: bold;
+}
+h4 {
+	font-weight: bold;
+}
+h5 {
+	font-weight: bold;
+}
+h6 {
+	font-weight: bold;
+}
+em {
+	font-weight: bold;
+}
+p.note span {
+	font-weight: bold;
+}
+p.important span {
+	font-weight: bold;
+}
+p.tip span {
+	font-weight: bold;
+}
+p.inherited {
+	font-weight: bold;
+}
+p.inherited span {
+	font-weight: bold;
+}
+p.gototop {
+	font-weight: bold;
+}
+.html5_new_note span {
+	font-weight: bold;
+}
+body#homesecond div#navsecond li {
+	font-weight: bold;
+}
+.tiy {
+	font-weight: normal;
+}
+div#maincontent h1 {
+	font-size: 26px; font-weight: 400;
+}
+div#maincontent h2 {
+	font-size: 14px;
+}
+div#sidebar div#ad h2 {
+	font-size: 14px;
+}
+body#homefirst div#maincontent h3 {
+	font-size: 14px;
+}
+div#navsecond h2 {
+	font-size: 12px;
+}
+div#sidebar h2 {
+	font-size: 12px;
+}
+div#maincontent h3 {
+	font-size: 12px;
+}
+div#maincontent h4 {
+	font-size: 12px;
+}
+div#maincontent button {
+	font-size: 12px;
+}
+div#maincontent input {
+	font-size: 12px;
+}
+div#maincontent select {
+	font-size: 12px;
+}
+div#maincontent textarea {
+	font-size: 12px;
+}
+body#homefirst div#maincontent div#w3 h2 {
+	font-size: 20px;
+}
+em {
+	font-style: normal;
+}
+pre code {
+	color: rgb(0, 0, 221);
+}
+.html5_new_note {
+	background: url("/i/html5_new_note.png") no-repeat left top rgb(255, 255, 255); padding-left: 20px;
+}
+.html5_new_note span {
+	color: blue;
+}
+p.gototop {
+	text-align: right;
+}
+div#maincontent button {
+	margin-top: 15px;
+}
+html {
+	background: rgb(249, 249, 249); overflow: scroll; overflow-x: hidden; min-width: 966px;
+}
+body {
+	background: url("/ui/holder.gif") repeat-y top rgb(249, 249, 249); margin: 0px; padding: 0px; border: 0px currentColor; text-align: center;
+}
+div#wrapper {
+	background: url("/ui/wrapper.gif") repeat-y left top; margin: 0px auto; padding: 0px; border: 0px currentColor; width: 1129px; text-align: left;
+}
+div#navsecond {
+	margin: 0px 0px 0px 6px; padding: 0px; border: 0px currentColor; width: 180px; float: left;
+}
+html > body div#navsecond {
+	margin-left: 12px;
+}
+div#maincontent {
+	margin: 0px; padding: 0px; border: 0px currentColor; width: 740px; float: left;
+}
+div#sidebar {
+	margin: 0px; padding: 0px; border: 0px currentColor; width: 180px; float: left;
+}
+div#footer {
+	background: rgb(182, 182, 182); margin: 0px 0px 0px 12px; padding: 0px; width: 1100px; height: 46px; clear: both; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 10px; border-bottom-width: 10px; border-top-style: solid; border-bottom-style: solid;
+}
+div#footer p {
+	margin: 5px 10px 0px;
+}
+div#header {
+	margin: 0px 0px 0px 12px; padding: 0px; border: 0px currentColor; width: 1100px; height: 90px; background-color: rgb(239, 239, 239);
+}
+div#header_index {
+	margin: 0px 0px 0px 12px; padding: 0px; border: 0px currentColor; width: 1100px; height: 90px; background-color: rgb(239, 239, 239);
+}
+div#header a {
+	margin: 0px; padding: 0px; border: 0px currentColor; text-indent: -9999px; overflow: hidden;
+}
+div#header_index a {
+	margin: 0px; padding: 0px; border: 0px currentColor; text-indent: -9999px; overflow: hidden;
+}
+div#header_index h1 {
+	margin: 0px; padding: 0px; border: 0px currentColor; text-indent: -9999px; overflow: hidden;
+}
+div#header a:link {
+	background: url("/ui/bg.gif") no-repeat 0px -120px; margin: 0px; padding: 0px; border: 0px currentColor; width: 372px; height: 90px; display: block;
+}
+div#header a:visited {
+	background: url("/ui/bg.gif") no-repeat 0px -120px; margin: 0px; padding: 0px; border: 0px currentColor; width: 372px; height: 90px; display: block;
+}
+div#header a:hover {
+	background: url("/ui/bg.gif") no-repeat 0px -210px;
+}
+div#header div#ad_head {
+	width: 728px; height: 90px; float: right; background-color: rgb(239, 239, 239);
+}
+div#header_index a:link {
+	background: url("/ui/head_index.gif") no-repeat left top; margin: 0px; padding: 0px; border: 0px currentColor; width: 1100px; height: 90px; display: block;
+}
+div#header_index a:visited {
+	background: url("/ui/head_index.gif") no-repeat left top; margin: 0px; padding: 0px; border: 0px currentColor; width: 1100px; height: 90px; display: block;
+}
+div#header_index a:hover {
+	background: url("/ui/head_index.gif") no-repeat 0px -90px;
+}
+body#homefirst div#maincontent div {
+	padding-top: 0px;
+}
+body#homefirst div#maincontent div#w3 {
+	text-align: center;
+}
+body#homefirst div#maincontent div#partner {
+	width: 307px; float: left;
+}
+body#homefirst div#maincontent div#update {
+	margin: 0px; width: 300px; float: left;
+}
+body#homefirst div#maincontent div#w3 h2 {
+	margin-top: 20px;
+}
+body#homefirst div#maincontent h3 {
+	margin-top: 15px;
+}
+body#homefirst div#maincontent div.idea {
+	padding: 0px; min-height: 118px;
+}
+body#homefirst div#maincontent div.idea img {
+	margin: 0px; float: left;
+}
+div#navfirst {
+	background: rgb(255, 255, 255); margin: 0px 0px 0px 12px; padding: 0px; border: 0px currentColor; width: 1100px; height: 55px;
+}
+div#navfirst ul#menu {
+	background: url("/ui/bg.gif") no-repeat left top; margin: 0px; padding: 0px; width: 1100px; height: 55px; position: relative;
+}
+div#navfirst ul#menu li {
+	list-style: none; margin: 0px; padding: 0px; top: 0px; position: absolute;
+}
+ul#menu li {
+	height: 55px; display: block;
+}
+ul#menu a {
+	height: 55px; display: block;
+}
+div#navfirst ul#menu li a {
+	text-indent: -9999px; overflow: hidden; text-decoration: none;
+}
+#h {
+	left: 0px; width: 155px;
+}
+#b {
+	left: 155px; width: 157px;
+}
+#s {
+	left: 312px; width: 167px;
+}
+#d {
+	left: 479px; width: 158px;
+}
+#x {
+	left: 637px; width: 101px;
+}
+#m {
+	left: 738px; width: 185px;
+}
+#w {
+	left: 923px; width: 177px;
+}
+#h a:hover {
+	background: url("/ui/bg.gif") no-repeat 0px -55px;
+}
+#b a:hover {
+	background: url("/ui/bg.gif") no-repeat -155px -55px;
+}
+#s a:hover {
+	background: url("/ui/bg.gif") no-repeat -312px -55px;
+}
+#d a:hover {
+	background: url("/ui/bg.gif") no-repeat -479px -55px;
+}
+#x a:hover {
+	background: url("/ui/bg.gif") no-repeat -637px -55px;
+}
+#m a:hover {
+	background: url("/ui/bg.gif") no-repeat -738px -55px;
+}
+#w a:hover {
+	background: url("/ui/bg.gif") no-repeat -923px -55px;
+}
+body.html #h {
+	background: url("/ui/bg.gif") no-repeat 0px -55px;
+}
+body.browserscripting #b {
+	background: url("/ui/bg.gif") no-repeat -155px -55px;
+}
+body.serverscripting #s {
+	background: url("/ui/bg.gif") no-repeat -312px -55px;
+}
+body.dotnet #d {
+	background: url("/ui/bg.gif") no-repeat -479px -55px;
+}
+body.xml #x {
+	background: url("/ui/bg.gif") no-repeat -637px -55px;
+}
+body.multimedia #m {
+	background: url("/ui/bg.gif") no-repeat -738px -55px;
+}
+body.webbuilding #w {
+	background: url("/ui/bg.gif") no-repeat -923px -55px;
+}
+#ws {
+	left: 738px; width: 185px;
+}
+#ws a:hover {
+	background: url("/ui/bg.gif") no-repeat -738px -55px;
+}
+body.webservices #ws {
+	background: url("/ui/bg.gif") no-repeat -738px -55px;
+}
+a:link {
+	color: rgb(144, 11, 9); text-decoration: underline;
+}
+a:visited {
+	color: rgb(144, 11, 9); text-decoration: underline;
+}
+a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a:active {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+div#navsecond li.currentLink a:link {
+	color: rgb(255, 0, 0); text-decoration: none;
+}
+div#navsecond li.currentLink a:visited {
+	color: rgb(255, 0, 0); text-decoration: none;
+}
+div#navsecond li.currentLink a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+div#navsecond a:link {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+div#navsecond a:visited {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+div#navsecond a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+div#navsecond a:active {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+div#navsecond a#link_help {
+	color: rgb(4, 121, 167);
+}
+div#navsecond a#link_about {
+	color: rgb(4, 121, 167);
+}
+div#maincontent .partner a {
+	color: rgb(4, 121, 167);
+}
+div#footer a:link {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+div#footer a:visited {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+div#footer a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+div#footer a:active {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+div#maincontent p {
+	margin: 12px 0px 0px; line-height: 150%;
+}
+div#maincontent h1 {
+	margin: 15px 0px 0px 15px;
+}
+div#maincontent h3 {
+	margin: 20px 0px 0px;
+}
+div#maincontent h4 {
+	margin: 20px 0px 0px;
+}
+div#navsecond h2 {
+	margin: 10px 0px 0px 12px;
+}
+div#sidebar h2 {
+	margin: 10px 0px 0px 12px;
+}
+body#homesecond div#navsecond li {
+	margin: 5px 0px 0px;
+}
+div.backtoreference p {
+	margin: 0px;
+}
+div#w3school p {
+	margin-left: 15px;
+}
+div#maincontent div p:first-child {
+	margin: 0px;
+}
+p.important span {
+	color: rgb(221, 0, 0);
+}
+p.tip span {
+	color: rgb(255, 153, 85);
+}
+p.inherited {
+	color: rgb(255, 0, 0);
+}
+p.inherited span {
+	color: rgb(153, 153, 153);
+}
+p.chinese span {
+	color: rgb(0, 0, 255);
+}
+pre {
+	background: rgb(245, 245, 245); margin: 10px 0px 0px; padding: 10px; border: 1px dotted rgb(119, 136, 85); width: 685px;
+}
+pre code {
+	color: rgb(0, 0, 221);
+}
+pre span {
+	color: rgb(153, 153, 153);
+}
+pre span.code_comment {
+	color: rgb(153, 153, 153);
+}
+blockquote {
+	margin: 15px;
+}
+div#maincontent ul {
+	margin-top: 10px; margin-bottom: 0px; margin-left: 35px;
+}
+div#maincontent ol {
+	margin-top: 10px; margin-bottom: 0px; margin-left: 35px;
+}
+div#maincontent li {
+	margin-top: 3px;
+}
+div#navsecond ul {
+	margin: 0px; padding: 0px;
+}
+div#navsecond li {
+	margin: 0px; padding: 0px;
+}
+div#sidebar ul {
+	margin: 0px; padding: 0px;
+}
+div#sidebar li {
+	margin: 0px; padding: 0px;
+}
+div#navsecond ul {
+	margin-left: 12px;
+}
+div#sidebar ul {
+	margin-left: 12px;
+}
+div#navsecond li {
+	list-style: none;
+}
+div#sidebar li {
+	list-style: none;
+}
+div#navsecond li.list_apart {
+	margin-top: 10px;
+}
+img {
+	border: 0px currentColor;
+}
+div#maincontent img {
+	margin: 25px 0px 0px 25px;
+}
+div#maincontent div {
+	border-width: 1px 0px; border-style: solid none; border-color: rgb(170, 170, 170) currentColor; margin: 0px 0px 0px 15px; padding: 20px 0px; width: 710px;
+}
+body#homesecond dl {
+	margin: 0px; padding: 0px;
+}
+body#homesecond dt {
+	margin: 0px; padding: 0px; font-size: 14px; font-weight: bold;
+}
+body#homesecond dd {
+	margin: 10px 0px 0px; padding: 0px; color: rgb(0, 0, 136);
+}
+body#homesecond dd p {
+	margin: 0px; padding: 0px;
+}
+div#maincontent div#toc div {
+	margin: 15px 0px 35px; padding: 0px; border: 0px currentColor;
+}
+div#toc img {
+	margin: 0px 10px 0px 0px; float: left;
+}
+div#toc div dt {
+	margin-top: 0px;
+}
+div#toc div dl {
+	margin-top: 0px;
+}
+div#example dl {
+	margin: 10px 0px 0px;
+}
+div.example dl {
+	margin: 10px 0px 0px;
+}
+div#moreexamples dl {
+	margin: 10px 0px 0px;
+}
+div#toc dl {
+	margin: 10px 0px 0px;
+}
+div#referencelist dl {
+	margin: 10px 0px 0px;
+}
+div#example dt {
+	margin: 15px 0px 5px;
+}
+div.example dt {
+	margin: 15px 0px 5px;
+}
+div#moreexamples dt {
+	margin: 15px 0px 5px;
+}
+div#toc dt {
+	margin: 15px 0px 5px;
+}
+div#referencelist dt {
+	margin: 15px 0px 5px;
+}
+div#example dd {
+	margin: 0px;
+}
+div.example dd {
+	margin: 0px;
+}
+div#moreexamples dd {
+	margin: 0px;
+}
+div#toc dd {
+	margin: 0px;
+}
+div#referencelist dd {
+	margin: 0px;
+}
+dl.define {
+	margin: 10px 0px 0px;
+}
+dl.define dt {
+	margin: 15px 0px 3px; color: rgb(4, 121, 167); font-weight: bold;
+}
+dl.define dd {
+	margin: 10px 0px 0px 10px; line-height: 150%;
+}
+span.deprecated {
+	color: rgb(232, 0, 0);
+}
+.marked {
+	color: rgb(221, 0, 0);
+}
+p.gototop {
+	text-align: right;
+}
+div#maincontent canvas.canvas_example {
+	background: rgb(255, 255, 255); border: 1px solid rgb(211, 211, 211); width: 300px; height: 150px; margin-top: 15px;
+}
+div#maincontent div.panel {
+	background: rgb(229, 238, 204); margin: 0px; padding: 5px; border: 1px solid rgb(195, 195, 195); width: 400px; text-align: center;
+}
+p.flip {
+	background: rgb(229, 238, 204); margin: 0px; padding: 5px; border: 1px solid rgb(195, 195, 195); width: 400px; text-align: center;
+}
+div#maincontent p.flip {
+	margin-top: 15px;
+}
+div.panel {
+	display: none;
+}
+div#maincontent input[type=text] {
+	margin: 15px 0px 0px; border: 1px solid rgb(190, 190, 190); height: 30px; padding-left: 10px;
+}
+div#maincontent input[type=submit] {
+	border: 1px solid rgb(190, 190, 190); height: 30px; padding-right: 5px; padding-left: 5px;
+}
+button {
+	border: 1px solid rgb(190, 190, 190); height: 30px; padding-right: 5px; padding-left: 5px;
+}
+div#maincontent input[type=submit]:hover {
+	border: 1px solid rgb(153, 153, 153);
+}
+button:hover {
+	border: 1px solid rgb(153, 153, 153);
+}
+div#maincontent select {
+	margin: 15px 0px 0px; border: 1px solid rgb(190, 190, 190); height: 25px;
+}
+table.dataintable {
+	border: 1px solid rgb(170, 170, 170); width: 100%; margin-top: 10px; border-collapse: collapse;
+}
+table.dataintable th {
+	padding: 5px 15px 5px 6px; border: 1px solid rgb(170, 170, 170); text-align: left; vertical-align: baseline; background-color: rgb(213, 213, 213);
+}
+table.dataintable td {
+	padding: 6px 15px 6px 6px; border: 1px solid rgb(170, 170, 170); vertical-align: text-top; background-color: rgb(239, 239, 239);
+}
+table.dataintable pre {
+	margin: 0px; padding: 0px; border: 0px currentColor; width: auto; background-color: transparent;
+}
+table.dataintable p {
+	margin: 0px 0px 2px;
+}
+div#maincontent table.dataintable ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+div#maincontent table.dataintable li {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+table.dataintable td em {
+	color: rgb(0, 0, 255); font-weight: normal;
+}
+table.dataintable .table_value {
+	color: rgb(15, 147, 210);
+}
+.no_wrap {
+	white-space: nowrap;
+}
+div#maincontent table.dataintable ul.listintable {
+	margin: 20px; padding: 0px;
+}
+div#maincontent table.dataintable ul.listintable li {
+	list-style-type: disc;
+}
+table.dataintable td.html5_new {
+	background: url("/i/table_bg_html5.gif") no-repeat right top rgb(239, 239, 239);
+}
+tr.notsupported {
+	color: rgb(153, 153, 153);
+}
+#jsref table.browsersupport td {
+	width: 20%;
+}
+#tags table.browsersupport td {
+	width: 20%;
+}
+#cssref table.browsersupport td {
+	width: 20%;
+}
+#jsref table.browsersupport th {
+	color: rgb(51, 51, 51); font-weight: 400;
+}
+#tags table.browsersupport th {
+	color: rgb(51, 51, 51); font-weight: 400;
+}
+#cssref table.browsersupport th {
+	color: rgb(51, 51, 51); font-weight: 400;
+}
+#jsref table.browsersupport {
+	width: 50%;
+}
+#tags table.browsersupport {
+	width: 50%;
+}
+#cssref table.browsersupport {
+	width: 50%;
+}
+table.browsersupport .bsIE {
+	background-image: url("/i/compatible_ie.gif");
+}
+table.browsersupport .bsFirefox {
+	background-image: url("/i/compatible_firefox.gif");
+}
+table.browsersupport .bsChrome {
+	background-image: url("/i/compatible_chrome.gif");
+}
+table.browsersupport .bsSafari {
+	background-image: url("/i/compatible_safari.gif");
+}
+table.browsersupport .bsOpera {
+	background-image: url("/i/compatible_opera.gif");
+}
+table.browsersupport .bsNoIE {
+	background-image: url("/i/incompatible_ie.gif");
+}
+table.browsersupport .bsNoFirefox {
+	background-image: url("/i/incompatible_firefox.gif");
+}
+table.browsersupport .bsNoChrome {
+	background-image: url("/i/incompatible_chrome.gif");
+}
+table.browsersupport .bsNoSafari {
+	background-image: url("/i/incompatible_safari.gif");
+}
+table.browsersupport .bsNoOpera {
+	background-image: url("/i/incompatible_opera.gif");
+}
+table.browsersupport .bsPreIE {
+	background-image: url("/i/precompatible_ie.gif");
+}
+table.browsersupport .bsPreFirefox {
+	background-image: url("/i/precompatible_firefox.gif");
+}
+table.browsersupport .bsPreChrome {
+	background-image: url("/i/precompatible_chrome.gif");
+}
+table.browsersupport .bsPreSafari {
+	background-image: url("/i/precompatible_safari.gif");
+}
+table.browsersupport .bsPreOpera {
+	background-image: url("/i/precompatible_opera.gif");
+}
+table.browsersupport {
+	width: 70%; margin-top: 15px; border-collapse: collapse;
+}
+table.browsersupport td {
+	background: no-repeat center rgb(255, 255, 255); padding: 3px; border: 1px solid rgb(218, 218, 218); height: 32px; vertical-align: middle;
+}
+table.browsersupport td.bsProperty {
+	width: 20%; font-family: courier new; white-space: nowrap;
+}
+table.browsersupport th {
+	padding: 3px; border: 1px solid rgb(195, 195, 195); height: 15px; text-align: center; vertical-align: middle; background-color: rgb(239, 239, 239);
+}
+div#tpn {
+	background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; width: 230px; height: 29px;
+}
+div#bpn {
+	background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; width: 230px; height: 29px;
+}
+div#tpn ul.prenext {
+	background: url("/ui/bg.gif") no-repeat 0px -570px; margin: 0px; padding: 0px; border: 0px currentColor; width: 230px; height: 29px; position: relative;
+}
+div#bpn ul.prenext {
+	background: url("/ui/bg.gif") no-repeat 0px -570px; margin: 0px; padding: 0px; border: 0px currentColor; width: 230px; height: 29px; position: relative;
+}
+div#tpn ul.prenext li {
+	list-style: none; margin: 0px; padding: 0px; top: 0px; overflow: hidden; position: absolute;
+}
+div#bpn ul.prenext li {
+	list-style: none; margin: 0px; padding: 0px; top: 0px; overflow: hidden; position: absolute;
+}
+ul.prenext li {
+	height: 29px; display: block;
+}
+ul.prenext a {
+	height: 29px; display: block;
+}
+div#tpn ul.prenext a {
+	text-indent: -9999px; text-decoration: none;
+}
+div#bpn ul.prenext a {
+	text-indent: -9999px; text-decoration: none;
+}
+.pre {
+	left: 0px; width: 105px;
+}
+.next {
+	left: 125px; width: 105px;
+}
+.pre a:hover {
+	background: url("/ui/bg.gif") no-repeat 0px -619px;
+}
+.next a:hover {
+	background: url("/ui/bg.gif") no-repeat -125px -619px;
+}
+div#course {
+	background: url("/ui/bg.gif") no-repeat 0px -690px; padding: 45px 0px 10px;
+}
+div#afterschool {
+	background: url("/ui/bg.gif") no-repeat -362px -690px; padding: 45px 0px 10px;
+}
+div#selected {
+	background: url("/ui/bg.gif") no-repeat -362px -690px; padding: 45px 0px 10px;
+}
+div#tools {
+	background: url("/ui/bg.gif") no-repeat -181px -690px; margin: 0px; padding: 66px 0px 10px 34px;
+}
+body#homesecond div#tools {
+	background: url("/ui/bg.gif") no-repeat -181px -690px; margin: 0px; padding: 45px 0px 10px;
+}
+div#books {
+	background: url("/ui/bg.gif") no-repeat -450px -326px; margin: 0px; padding: 45px 0px 0px 15px;
+}
+div#ad {
+	background: url("/ui/bg.gif") no-repeat -543px -690px; margin: 0px; padding: 66px 0px 10px 10px;
+}
+div#sidebar div#ad h2 {
+	margin: 0px 0px 25px 25px; color: rgb(0, 0, 0);
+}
+div#ad span {
+	margin: 0px 0px 15px;
+}
+div#tools h5 {
+	margin: 0px 0px 12px; padding: 0px; overflow: hidden;
+}
+div#tools h5#tools_reference {
+	width: 112px; height: 68px; text-indent: -9999px;
+}
+div#tools h5#tools_example {
+	width: 112px; height: 68px; text-indent: -9999px;
+}
+div#tools h5#tools_quiz {
+	width: 112px; height: 68px; text-indent: -9999px;
+}
+div#tools h5#tools_search {
+	width: 112px; height: 68px; text-indent: -9999px;
+}
+div#tools h5#tools_reference a {
+	margin: 0px; padding: 0px; width: 100%; height: 100%; text-decoration: none; display: block;
+}
+div#tools h5#tools_example a {
+	margin: 0px; padding: 0px; width: 100%; height: 100%; text-decoration: none; display: block;
+}
+div#tools h5#tools_quiz a {
+	margin: 0px; padding: 0px; width: 100%; height: 100%; text-decoration: none; display: block;
+}
+div#tools h5#tools_search a {
+	margin: 0px; padding: 0px; width: 100%; height: 100%; text-decoration: none; display: block;
+}
+div#tools h5#tools_reference a {
+	background: url("/ui/bg.gif") no-repeat 0px -320px;
+}
+div#tools h5#tools_reference a:hover {
+	background: url("/ui/bg.gif") no-repeat -113px -320px;
+}
+div#tools h5#tools_example a {
+	background: url("/ui/bg.gif") no-repeat 0px -389px;
+}
+div#tools h5#tools_example a:hover {
+	background: url("/ui/bg.gif") no-repeat -113px -389px;
+}
+div#tools h5#tools_quiz a {
+	background: url("/ui/bg.gif") no-repeat 0px -458px;
+}
+div#tools h5#tools_quiz a:hover {
+	background: url("/ui/bg.gif") no-repeat -113px -458px;
+}
+div#searchui {
+	margin: 15px 0px 15px 5px; padding: 0px;
+}
+div#searchui p {
+	margin: 0px 0px 5px; padding: 0px;
+}
+#searchui label {
+	margin: 0px 0px 0px 2px; text-transform: uppercase; letter-spacing: 2px; font-size: 11px;
+}
+#searchui input.button {
+	background: rgb(174, 65, 65); font: 12px/normal Verdana, Arial, Helvetica, sans-serif; margin: 0px; padding: 0px; width: 25px; height: 20px; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+#searchui input.box {
+	background: rgb(253, 253, 253); font: 12px/normal Verdana, Arial, Helvetica, sans-serif; margin: 0px 0px 0px 2px; width: 135px; height: 20px; font-size-adjust: none; font-stretch: normal;
+}

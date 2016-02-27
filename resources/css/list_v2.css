@@ -1,0 +1,80 @@
+
+body{background:#fff;color:#2b2b2b}
+a{color:#2b2b2b}
+.us_blue,.us_blue a{color:#004276}
+.cred,.cred a,a.cred{color:#7B0908}
+.cgray,.cgray a,a.cgray{color:#666}
+/*通用间隔*/
+.clear{clear:both;height:0;line-height:0;font-size:0}
+.space10{clear:both;height:10px;line-height:0;font-size:0}
+.space15{clear:both;height:15px;line-height:0;font-size:0}
+/*商业信息*/
+.pic950{width:1000px;margin:0 auto 15px auto;text-align:center}
+.pic300{float:left;border:1px solid #ddd;background:#fff;padding:6px 7px 6px 6px;margin-bottom:10px}
+/*main*/
+.main{width:1000px;margin:0 auto;background:url(http://img.ifeng.com/list/icon_02.gif) repeat-y right top}
+.left{float:left;width:642px;border-top:4px solid #000;}
+.right{float:right;width:315px;padding:10px 10px 0 10px}
+.newsList{}
+.newsList h2{font-weight:bold;height:43px;line-height:43px;padding-left:5px}
+.newsList ul{float:left;width:642px;background:url(http://img.ifeng.com/list/dotline.gif) repeat-x top;padding:15px 0}
+.newsList li{font-size:14px;line-height:24px;padding:0 0 0 21px;background:url(http://img.ifeng.com/list/icon_66.gif) no-repeat 5px 6px}
+.newsList li h4{font-size:14px;font-family:Arial,Helvetica,sans-serif;float:right;font-weight:normal;line-height:24px}
+.newsList li span{background:url(http://img.ifeng.com/list/icon_01.gif) no-repeat 5px 1px;padding:0 0 0 18px}
+.newsList li a{color:#004276}
+/*通用翻页样式*/
+.nextPage{width:642px;height:28px;line-height:28px;padding:2px 0 0 0;background:url(http://img.ifeng.com/list/list_nextpagebg.gif) repeat-x;margin-top:10px}
+.nextPage a{line-height:28px}
+	.nextPage .l_home{float:left;margin:0 220px 0 0}
+	.nextPage .m_page{float:left;width:200px;height:23x;overflow:hidden;padding-top:1px!important;*padding-top:5px!important;padding-top:5px}
+	.nextPage .m_page span{display:block;float:left;margin:0 5px;cursor:pointer}
+	.nextPage .r_end{float:right}
+/*右侧*/
+.blockR{float:left;width:313px;border:1px solid #ddd;background:#fff;margin-bottom:10px}
+.blockR h2{float:left;width:293px;padding:0 10px;height:42px;line-height:42px;border-bottom:1px solid #ddd}
+.blockR h2 span{float:right;background:url(http://img.ifeng.com/list/icon_04.gif) no-repeat right center;padding-right:10px;font-size:12px}
+.blockR h2 span a{color:#666}
+/*专题*/
+.itemR{float:left;width:313px;background:#fff;border-top:none}
+.zttjbox{padding:10px 10px 6px 10px!important;padding:10px 10px 0 10px;width:292px}
+.zttjbox dt{float:left;width:120px;height:95px}
+.zttjbox dd{padding:0 0 0 1px;width:170px;float:left}
+.zttjbox dd ul{width:170px}
+.zttjbox dd ul li{background:#F5F5F5;width:170px;height:31px;line-height:31px;text-indent:8px;color:#2D2D2D;border-bottom:1px solid #D9D9D9}
+.zttjbox dd ul li a{color:#2D2D2D}
+.zttjbox dd ul li.current{background:url(http://img.ifeng.com/list/icon_05.gif) repeat-x top;text-indent:9px;height:31px;line-height:30px;color:#fff}
+.zttjbox dd ul li.current a{color:#fff}
+.zttjUl{padding:5px 10px 10px 10px;width:292px;clear:both}
+.zttjUl li{background:url(http://img.ifeng.com/list/icon_66.gif) no-repeat 0 6px;width:270px;padding:0 0 0 15px;line-height:20px;height:20px;overflow:hidden;color:#ccc}
+	
+/*排行*/
+.RpicNews03{width:313px;float:left;display:inline;padding-bottom:11px;border:1px solid #ddd;background:#fff}
+.RpicNews03 h2{float:left;width:300px;padding-left:13px;height:40px;line-height:40px;border-bottom:1px solid #ddd}
+.RpicNews03 .label{float:left;width:313px;height:20px;background:url(http://img.ifeng.com/list/label_bg2.gif) repeat-x top;line-height:19px}
+.RpicNews03 .label li{float:left;width:85px;height:18px;background:#f0f0f0;text-align:center;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px solid #ccc;cursor:pointer}
+.RpicNews03 .label li.current{float:left;height:18px;text-align:center;background:#fff;border-bottom:1px solid #fff}
+.top10{width:285px;padding:5px 0 0 12px;float:left}
+.top10 li{width:285px;float:left;padding:7px 0;border-bottom:1px #E6E6E6 solid;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:14px}
+.top10 li span{float:right;color:#ba2636;font-family:"宋体";font-size:12px;font-weight:normal;line-height:18px}
+.top10 li a{width:255px;padding:1px 0 0;line-height:18px;color:#004276;font-size:12px;font-weight:normal}
+.top10 li img{float:right;padding-right:3px}
+.top10 .tt{width:285px;float:left;padding:10px 0;border-bottom:1px #E6E6E6 solid}
+.top10 .tt span{float:left;height:45px;line-height:45px;padding:0 3px 0 8px;font-size:25px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;color:#76A7CD;border-right:1px solid #E7E7E7}
+.top10 .tt img{float:left;margin:0 10px 0 5px;display:inline}
+.top10 p a{line-height:18px;color:#004276}
+.picText{float:left;padding-bottom:15px}
+.picText li{float:left;width:140px;position:relative;line-height:20px;padding:10px 0 0 11px}
+.picText li img{width:140px;height:105px;display:block;margin-bottom:3px}
+.picText li span{position:absolute;top:90px;right:7px;margin-bottom:0}
+.picText li span img{width:24px;height:18px}
+.feather{float:left;padding:5px 0 0 10px;width:303px}
+.feather img{float:left;width:150px;height:70px;margin:5px 10px 0 0;display:inline}
+.feather ul{float:left;width:132px}
+.feather li{line-height:20px;color:#007BBB}
+.feather li a{color:#007BBB}
+.searchDiv02{width:980px;margin:0 auto;height:38px;padding:10px 10px 0;}/*listOnly*/
+.searchDiv02 .theLogo{width:620px;}/*listOnly*/
+.theLogo{float:left;font-size:12px;}
+.theLogo img{float:left;}
+.theLogo span{float:left; height:31px; margin-left:10px; display:inline; border-left:1px solid #ccc; padding:3px 0 0 10px; overflow:hidden;}
+.theCurrent{float:left; padding:7px 0 0 15px;}

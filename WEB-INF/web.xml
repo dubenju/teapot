@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="3.1">
+    <filter>
+        <filter-name>TraceHttpFilter</filter-name>
+        <filter-class>org.teapot.log4j.filter.TraceHttpFilter</filter-class>
+        <init-param>
+            <param-name>param-name</param-name>
+            <param-value>param-value</param-value>
+        </init-param>
+    </filter>
+
+
+    <servlet>
+        <description>This is a Teapot Servlet Project.</description>
+        <servlet-name>teapot</servlet-name>
+        <servlet-class>org.teapot.servlet.TeapotServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <init-param>
+            <param-name>properties</param-name>
+            <param-value>
+                /WEB-INF/conf/TeapotResources.properties
+            </param-value>
+        </init-param>
+    </servlet>
+
+    <filter-mapping>
+        <filter-name>TraceHttpFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet-mapping>
+      <servlet-name>teapot</servlet-name>
+      <url-pattern>/t/*</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

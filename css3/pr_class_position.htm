@@ -1,0 +1,203 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.w3school.com.cn/cssref/pr_class_position.asp -->
+<!DOCTYPE html><HTML lang="zh-cn"><HEAD>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type">
+<META name="robots" content="all">
+<META name="author" content="w3school.com.cn"><LINK rel="stylesheet" type="text/css" 
+href="pr_class_position.files/c5.css"><TITLE>CSS position 属性</TITLE>
+<META name="GENERATOR" content="MSHTML 9.00.8112.16644"></HEAD>
+<BODY id="cssref" class="html">
+<DIV id="wrapper">
+<DIV id="header"><A style="float: left;" title="w3school 在线教程" href="http://www.w3school.com.cn/index.html">w3school 
+在线教程</A>
+<DIV id="ad_head">
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "pub-3381531532877742";
+/* 728x90, 创建于 08-12-1 */
+google_ad_slot = "7423315034";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="pr_class_position.files/f.txt">
+</SCRIPT>
+</DIV></DIV>
+<DIV id="navfirst">
+<UL id="menu">
+  <LI id="h"><A title="HTML 系列教程" href="http://www.w3school.com.cn/h.asp">HTML 
+  系列教程</A></LI>
+  <LI id="b"><A title="浏览器脚本教程" 
+  href="http://www.w3school.com.cn/b.asp">浏览器脚本</A></LI>
+  <LI id="s"><A title="服务器脚本教程" 
+  href="http://www.w3school.com.cn/s.asp">服务器脚本</A></LI>
+  <LI id="d"><A title="ASP.NET 教程" 
+  href="http://www.w3school.com.cn/d.asp">ASP.NET 教程</A></LI>
+  <LI id="x"><A title="XML 系列教程" href="http://www.w3school.com.cn/x.asp">XML 
+  系列教程</A></LI>
+  <LI id="ws"><A title="Web Services 系列教程" href="http://www.w3school.com.cn/ws.asp">Web 
+  Services 系列教程</A></LI>
+  <LI id="w"><A title="建站手册" 
+  href="http://www.w3school.com.cn/w.asp">建站手册</A></LI></UL></DIV>
+<DIV id="navsecond">
+<DIV id="course">
+<H2>CSS 参考手册</H2>
+<UL>
+  <LI><A title="CSS 参考手册" href="http://www.w3school.com.cn/cssref/index.asp">CSS 
+  参考手册</A></LI>
+  <LI><A title="CSS 选择器参考手册" href="http://www.w3school.com.cn/cssref/css_selectors.asp">CSS 
+  选择器</A></LI>
+  <LI><A title="CSS 听觉参考手册" href="http://www.w3school.com.cn/cssref/css_ref_aural.asp">CSS 
+  听觉参考手册</A></LI>
+  <LI><A title="CSS 网络安全字体组合" href="http://www.w3school.com.cn/cssref/css_websafe_fonts.asp">CSS 
+  网络安全字体</A></LI>
+  <LI><A title="CSS 单位" 
+  href="http://www.w3school.com.cn/cssref/css_units.asp">CSS 单位</A></LI>
+  <LI><A title="CSS 颜色" 
+  href="http://www.w3school.com.cn/cssref/css_colors.asp">CSS 颜色</A></LI>
+  <LI><A title="CSS 合法颜色值" href="http://www.w3school.com.cn/cssref/css_colors_legal.asp">CSS 
+  颜色值</A></LI>
+  <LI><A title="CSS 颜色名" href="http://www.w3school.com.cn/cssref/css_colornames.asp">CSS 
+  颜色名</A></LI>
+  <LI><A title="CSS 颜色十六进制值" href="http://www.w3school.com.cn/cssref/css_colorsfull.asp">CSS 
+  颜色十六进制</A></LI></UL></DIV></DIV>
+<DIV id="maincontent">
+<H1>CSS position 属性</H1>
+<DIV class="backtoreference">
+<P><A title="CSS 参考手册" href="http://www.w3school.com.cn/cssref/index.asp">CSS 
+参考手册</A></P></DIV>
+<DIV>
+<H2>实例</H2>
+<P>定位 h2 元素：</P><PRE>h2
+  {
+  <CODE>position:absolute;</CODE>
+  left:100px;
+  top:150px;
+  }
+</PRE>
+<P class="tiy"><A href="http://www.w3school.com.cn/tiy/t.asp?f=csse_position_absolute" 
+target="_blank">亲自试一试</A></P></DIV>
+<DIV>
+<H2>浏览器支持</H2>
+<TABLE class="dataintable browsersupport">
+  <TBODY>
+  <TR>
+    <TH>IE</TH>
+    <TH>Firefox</TH>
+    <TH>Chrome</TH>
+    <TH>Safari</TH>
+    <TH>Opera</TH></TR>
+  <TR>
+    <TD class="bsIE"></TD>
+    <TD class="bsFirefox"></TD>
+    <TD class="bsChrome"></TD>
+    <TD class="bsSafari"></TD>
+    <TD class="bsOpera"></TD></TR></TBODY></TABLE>
+<P>所有主流浏览器都支持 position 属性。</P>
+<P class="note"><SPAN>注释：</SPAN>任何的版本的 Internet Explorer （包括 IE8）都不支持属性值 
+"inherit"。</P></DIV>
+<DIV>
+<H2>定义和用法</H2>
+<P>position 属性规定元素的定位类型。</P>
+<H3>说明</H3>
+<P>这个属性定义建立元素布局所用的定位机制。任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。</P>
+<TABLE class="dataintable">
+  <TBODY>
+  <TR>
+    <TH style="width: 25%;">默认值：</TH>
+    <TD style="width: 75%;">static</TD></TR>
+  <TR>
+    <TH>继承性：</TH>
+    <TD>no</TD></TR>
+  <TR>
+    <TH>版本：</TH>
+    <TD>CSS2</TD></TR>
+  <TR>
+    <TH>JavaScript 语法：</TH>
+    <TD><I>object</I>.style.position="absolute"</TD></TR></TBODY></TABLE></DIV>
+<DIV>
+<H2>可能的值</H2>
+<TABLE class="dataintable">
+  <TBODY>
+  <TR>
+    <TH>值</TH>
+    <TH>描述</TH></TR>
+  <TR>
+    <TD>absolute</TD>
+    <TD>
+      <P>生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。</P>
+      <P>元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。</P></TD></TR>
+  <TR>
+    <TD>fixed</TD>
+    <TD>
+      <P>生成绝对定位的元素，相对于浏览器窗口进行定位。</P>
+      <P>元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。</P></TD></TR>
+  <TR>
+    <TD>relative</TD>
+    <TD>
+      <P>生成相对定位的元素，相对于其正常位置进行定位。</P>
+      <P>因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。</P></TD></TR>
+  <TR>
+    <TD>static</TD>
+    <TD>默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。</TD></TR>
+  <TR>
+    <TD>inherit</TD>
+    <TD>规定应该从父元素继承 position 属性的值。</TD></TR></TBODY></TABLE></DIV>
+<DIV class="example">
+<H2>TIY 实例</H2>
+<DL>
+  <DT><A href="http://www.w3school.com.cn/tiy/t.asp?f=csse_position_relative" 
+  target="_blank">定位：相对定位</A></DT>
+  <DD>本例演示如何相对于一个元素的正常位置来对其定位。</DD>
+  <DT><A href="http://www.w3school.com.cn/tiy/t.asp?f=csse_position_absolute" 
+  target="_blank">定位：绝对定位</A></DT>
+  <DD>本例演示如何使用绝对值来对元素进行定位。</DD>
+  <DT><A href="http://www.w3school.com.cn/tiy/t.asp?f=csse_position_fixed" 
+  target="_blank">定位：固定定位</A></DT>
+  <DD>本例演示如何相对于浏览器窗口来对元素进行定位。</DD>
+  <DT><A href="http://www.w3school.com.cn/tiy/t.asp?f=csse_clip" 
+  target="_blank">设置元素的形状</A></DT>
+  <DD>本例演示如何设置元素的形状。此元素被剪裁到这个形状内，并显示出来。</DD>
+  <DT><A href="http://www.w3school.com.cn/tiy/t.asp?f=csse_zindex2" target="_blank">Z-index</A></DT>
+  <DD>Z-index可被用于将在一个元素放置于另一元素之后。</DD>
+  <DT><A href="http://www.w3school.com.cn/tiy/t.asp?f=csse_zindex1" target="_blank">Z-index</A></DT>
+  <DD>上面的例子中的元素已经更改了Z-index。</DD></DL></DIV>
+<DIV>
+<H2>相关页面</H2>
+<P>CSS 教程：<A title="CSS 定位 (Positioning)" href="http://www.w3school.com.cn/css/css_positioning.asp">CSS 
+定位</A></P>
+<P>HTML DOM 参考手册：<A title="HTML DOM position 属性" href="http://www.w3school.com.cn/jsref/prop_style_position.asp">position 
+属性</A></P></DIV>
+<DIV class="backtoreference">
+<P><A title="CSS 参考手册" href="http://www.w3school.com.cn/cssref/index.asp">CSS 
+参考手册</A></P></DIV></DIV><!-- maincontent end -->
+<DIV id="sidebar">
+<DIV id="searchui">
+<FORM id="searchform" method="get" action="http://www.google.com.hk/search">
+<P><LABEL for="searched_content">Search:</LABEL></P>
+<P><INPUT name="sitesearch" value="w3school.com.cn" type="hidden"></P>
+<P><INPUT id="searched_content" class="box" title="在此输入搜索内容。" name="as_q" type="text"><INPUT class="button" title="搜索！" value="Go" type="submit"></P></FORM></DIV>
+<DIV id="tools">
+<H5 id="tools_reference"><A 
+href="http://www.w3school.com.cn/cssref/index.asp">CSS 参考手册</A></H5></DIV>
+<DIV id="ad">
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "ca-pub-3381531532877742";
+/* sidebar-160x600 */
+google_ad_slot = "3772569310";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="pr_class_position.files/f.txt">
+</SCRIPT>
+</DIV></DIV>
+<DIV id="footer">
+<P>W3School 提供的内容仅用于培训。我们不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。W3School 
+简体中文版的所有内容仅供测试，对任何法律问题及风险不承担任何责任。</P>
+<P>当使用本站时，代表您已接受了本站的<A title="关于使用" href="http://www.w3school.com.cn/about/about_use.asp">使用条款</A>和<A 
+title="关于隐私" 
+href="http://www.w3school.com.cn/about/about_privacy.asp">隐私条款</A>。版权所有，保留一切权利。
+ 赞助商：<A title="上海赢科投资有限公司" href="http://www.yktz.net/">上海赢科投资有限公司</A>。<A href="http://www.miitbeian.gov.cn/">蒙ICP备06004630号</A>
+</P></DIV></DIV><!-- wrapper end --></BODY></HTML>

@@ -1,0 +1,619 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)http://www.w3school.com.cn/tags/html_ref_eventattributes.asp -->
+<!DOCTYPE html><HTML lang="zh-cn"><HEAD>
+<META charset="gbk">
+<META name="robots" content="all">
+<META name="author" content="w3school.com.cn"><LINK rel="stylesheet" type="text/css" 
+href="html_ref_eventattributes.files/c5.css"><TITLE>HTML 事件属性</TITLE>
+<META name="GENERATOR" content="MSHTML 9.00.8112.16644"></HEAD>
+<BODY id="tags" class="html">
+<DIV id="wrapper">
+<DIV id="header"><A style="float: left;" title="w3school 在线教程" href="http://www.w3school.com.cn/index.html">w3school 
+在线教程</A>
+<DIV id="ad_head">
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "pub-3381531532877742";
+/* 728x90, 创建于 08-12-1 */
+google_ad_slot = "7423315034";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="html_ref_eventattributes.files/f.txt">
+</SCRIPT>
+</DIV></DIV>
+<DIV id="navfirst">
+<UL id="menu">
+  <LI id="h"><A title="HTML 系列教程" href="http://www.w3school.com.cn/h.asp">HTML 
+  系列教程</A></LI>
+  <LI id="b"><A title="浏览器脚本教程" 
+  href="http://www.w3school.com.cn/b.asp">浏览器脚本</A></LI>
+  <LI id="s"><A title="服务器脚本教程" 
+  href="http://www.w3school.com.cn/s.asp">服务器脚本</A></LI>
+  <LI id="d"><A title="ASP.NET 教程" 
+  href="http://www.w3school.com.cn/d.asp">ASP.NET 教程</A></LI>
+  <LI id="x"><A title="XML 系列教程" href="http://www.w3school.com.cn/x.asp">XML 
+  系列教程</A></LI>
+  <LI id="ws"><A title="Web Services 系列教程" href="http://www.w3school.com.cn/ws.asp">Web 
+  Services 系列教程</A></LI>
+  <LI id="w"><A title="建站手册" 
+  href="http://www.w3school.com.cn/w.asp">建站手册</A></LI></UL></DIV>
+<DIV id="navsecond">
+<DIV id="course">
+<H2>参考手册</H2>
+<UL>
+  <LI><A title="HTML 4.01 / XHTML 1.0 参考手册" href="http://www.w3school.com.cn/tags/index.asp">标签列表（字母排序）</A></LI>
+  <LI><A title="HTML 4.01 / XHTML 1.0 参考手册" href="http://www.w3school.com.cn/tags/html_ref_byfunc.asp">标签列表（功能排序）</A></LI>
+  <LI><A title="HTML 标准属性" href="http://www.w3school.com.cn/tags/html_ref_standardattributes.asp">HTML 
+  属性</A></LI>
+  <LI class="currentLink"><A title="HTML 事件属性" href="http://www.w3school.com.cn/tags/html_ref_eventattributes.asp">HTML 
+  事件</A></LI>
+  <LI><A title="HTML Audio/Video DOM 属性" href="http://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp">HTML 
+  视频/音频</A></LI>
+  <LI><A title="HTML Canvas 参考手册" href="http://www.w3school.com.cn/tags/html_ref_canvas.asp">HTML 
+  画布</A></LI>
+  <LI><A title="HTML 元素和有效的 DTD" href="http://www.w3school.com.cn/tags/html_ref_dtd.asp">HTML 
+  文档类型</A></LI>
+  <LI><A title="HTML 颜色名" href="http://www.w3school.com.cn/tags/html_ref_colornames.asp">HTML 
+  颜色名</A></LI>
+  <LI><A title="HTML 字符集" href="http://www.w3school.com.cn/tags/html_ref_charactersets.asp">HTML 
+  字符集</A></LI>
+  <LI><A title="HTML 7 比特 ASCII 代码 参考手册" href="http://www.w3school.com.cn/tags/html_ref_ascii.asp">HTML 
+  ASCII</A></LI>
+  <LI><A title="HTML ISO-8859-1 参考手册" href="http://www.w3school.com.cn/tags/html_ref_entities.html">HTML 
+  ISO-8859-1</A></LI>
+  <LI><A title="HTML 符号实体" href="http://www.w3school.com.cn/tags/html_ref_symbols.html">HTML 
+  符号</A></LI>
+  <LI><A title="HTML URL 编码" href="http://www.w3school.com.cn/tags/html_ref_urlencode.html">HTML 
+  URL 编码</A></LI>
+  <LI><A title="HTML 语言代码参考手册" href="http://www.w3school.com.cn/tags/html_ref_language_codes.asp">HTML 
+  语言代码</A></LI>
+  <LI><A title="HTTP 状态消息" href="http://www.w3school.com.cn/tags/html_ref_httpmessages.asp">HTTP 
+  消息</A></LI>
+  <LI><A title="HTTP 方法：GET 对比 POST" href="http://www.w3school.com.cn/tags/html_ref_httpmethods.asp">HTTP 
+  方法</A></LI></UL>
+<H2>HTML 标签</H2>
+<UL>
+  <LI><A title="HTML <!--> 标签" href="http://www.w3school.com.cn/tags/tag_comment.asp">&lt;!--&gt;</A></LI>
+  <LI><A title="HTML <!DOCTYPE> 标签" href="http://www.w3school.com.cn/tags/tag_doctype.asp">&lt;!DOCTYPE&gt;</A></LI>
+  <LI><A title="HTML <a> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_a.asp">&lt;a&gt;</A></LI>
+  <LI><A title="HTML <abbr> 标签" href="http://www.w3school.com.cn/tags/tag_abbr.asp">&lt;abbr&gt;</A></LI>
+  <LI><A title="HTML <acronym> 标签" href="http://www.w3school.com.cn/tags/tag_acronym.asp">&lt;acronym&gt;</A></LI>
+  <LI><A title="HTML <address> 标签" href="http://www.w3school.com.cn/tags/tag_address.asp">&lt;address&gt;</A></LI>
+  <LI><A title="HTML <applet> 标签" href="http://www.w3school.com.cn/tags/tag_applet.asp">&lt;applet&gt;</A></LI>
+  <LI><A title="HTML <area> 标签" href="http://www.w3school.com.cn/tags/tag_area.asp">&lt;area&gt;</A></LI>
+  <LI><A title="HTML <article> 标签" href="http://www.w3school.com.cn/tags/tag_article.asp">&lt;article&gt;</A></LI>
+  <LI><A title="HTML <aside> 标签" href="http://www.w3school.com.cn/tags/tag_aside.asp">&lt;aside&gt;</A></LI>
+  <LI><A title="HTML <audio> 标签" href="http://www.w3school.com.cn/tags/tag_audio.asp">&lt;audio&gt;</A></LI>
+  <LI><A title="HTML <b> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_b.asp">&lt;b&gt;</A></LI>
+  <LI><A title="HTML <base> 标签" href="http://www.w3school.com.cn/tags/tag_base.asp">&lt;base&gt;</A></LI>
+  <LI><A title="HTML <basefont> 标签" href="http://www.w3school.com.cn/tags/tag_basefont.asp">&lt;basefont&gt;</A></LI>
+  <LI><A title="HTML <bdi> 标签" href="http://www.w3school.com.cn/tags/tag_bdi.asp">&lt;bdi&gt;</A></LI>
+  <LI><A title="HTML <bdo> 标签" href="http://www.w3school.com.cn/tags/tag_bdo.asp">&lt;bdo&gt;</A></LI>
+  <LI><A title="HTML <big> 标签" href="http://www.w3school.com.cn/tags/tag_big.asp">&lt;big&gt;</A></LI>
+  <LI><A title="HTML <blockquote> 标签" href="http://www.w3school.com.cn/tags/tag_blockquote.asp">&lt;blockquote&gt;</A></LI>
+  <LI><A title="HTML <body> 标签" href="http://www.w3school.com.cn/tags/tag_body.asp">&lt;body&gt;</A></LI>
+  <LI><A title="HTML <br> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_br.asp">&lt;br&gt;</A></LI>
+  <LI><A title="HTML <button> 标签" href="http://www.w3school.com.cn/tags/tag_button.asp">&lt;button&gt;</A></LI>
+  <LI><A title="HTML <canvas> 标签" href="http://www.w3school.com.cn/tags/tag_canvas.asp">&lt;canvas&gt;</A></LI>
+  <LI><A title="HTML <caption> 标签" href="http://www.w3school.com.cn/tags/tag_caption.asp">&lt;caption&gt;</A></LI>
+  <LI><A title="HTML <center> 标签" href="http://www.w3school.com.cn/tags/tag_center.asp">&lt;center&gt;</A></LI>
+  <LI><A title="HTML <cite> 标签" href="http://www.w3school.com.cn/tags/tag_cite.asp">&lt;cite&gt;</A></LI>
+  <LI><A title="HTML <code> 标签" href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp">&lt;code&gt;</A></LI>
+  <LI><A title="HTML <col> 标签" href="http://www.w3school.com.cn/tags/tag_col.asp">&lt;col&gt;</A></LI>
+  <LI><A title="HTML <colgroup> 标签" href="http://www.w3school.com.cn/tags/tag_colgroup.asp">&lt;colgroup&gt;</A></LI>
+  <LI><A title="HTML <command> 标签" href="http://www.w3school.com.cn/tags/tag_command.asp">&lt;command&gt;</A></LI>
+  <LI><A title="HTML <datalist> 标签" href="http://www.w3school.com.cn/tags/tag_datalist.asp">&lt;datalist&gt;</A></LI>
+  <LI><A title="HTML <dd> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_dd.asp">&lt;dd&gt;</A></LI>
+  <LI><A title="HTML <del> 标签" href="http://www.w3school.com.cn/tags/tag_del.asp">&lt;del&gt;</A></LI>
+  <LI><A title="HTML <details> 标签" href="http://www.w3school.com.cn/tags/tag_details.asp">&lt;details&gt;</A></LI>
+  <LI><A title="HTML <dfn> 标签" href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp">&lt;dfn&gt;</A></LI>
+  <LI><A title="HTML <dialog> 标签" href="http://www.w3school.com.cn/tags/tag_dialog.asp">&lt;dialog&gt;</A></LI>
+  <LI><A title="HTML <dir> 标签" href="http://www.w3school.com.cn/tags/tag_dir.asp">&lt;dir&gt;</A></LI>
+  <LI><A title="HTML <div> 标签" href="http://www.w3school.com.cn/tags/tag_div.asp">&lt;div&gt;</A></LI>
+  <LI><A title="HTML <dl> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_dl.asp">&lt;dl&gt;</A></LI>
+  <LI><A title="HTML <dt> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_dt.asp">&lt;dt&gt;</A></LI>
+  <LI><A title="HTML <em> 标签" href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp">&lt;em&gt;</A></LI>
+  <LI><A title="HTML <embed> 标签" href="http://www.w3school.com.cn/tags/tag_embed.asp">&lt;embed&gt;</A></LI>
+  <LI><A title="HTML <fieldset> 标签" href="http://www.w3school.com.cn/tags/tag_fieldset.asp">&lt;fieldset&gt;</A></LI>
+  <LI><A title="HTML <figcaption> 标签" href="http://www.w3school.com.cn/tags/tag_figcaption.asp">&lt;figcaption&gt;</A></LI>
+  <LI><A title="HTML <figure> 标签" href="http://www.w3school.com.cn/tags/tag_figure.asp">&lt;figure&gt;</A></LI>
+  <LI><A title="HTML <font> 标签" href="http://www.w3school.com.cn/tags/tag_font.asp">&lt;font&gt;</A></LI>
+  <LI><A title="HTML <footer> 标签" href="http://www.w3school.com.cn/tags/tag_footer.asp">&lt;footer&gt;</A></LI>
+  <LI><A title="HTML <form> 标签" href="http://www.w3school.com.cn/tags/tag_form.asp">&lt;form&gt;</A></LI>
+  <LI><A title="HTML <frame> 标签" href="http://www.w3school.com.cn/tags/tag_frame.asp">&lt;frame&gt;</A></LI>
+  <LI><A title="HTML <frameset> 标签" href="http://www.w3school.com.cn/tags/tag_frameset.asp">&lt;frameset&gt;</A></LI>
+  <LI><A title="HTML <h1> - <h6> 标签" href="http://www.w3school.com.cn/tags/tag_hn.asp">&lt;h1&gt; 
+  - &lt;h6&gt;</A></LI>
+  <LI><A title="HTML <head> 标签" href="http://www.w3school.com.cn/tags/tag_head.asp">&lt;head&gt;</A></LI>
+  <LI><A title="HTML <header> 标签" href="http://www.w3school.com.cn/tags/tag_header.asp">&lt;header&gt;</A></LI>
+  <LI><A title="HTML <hr> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_hr.asp">&lt;hr&gt;</A></LI>
+  <LI><A title="HTML <html> 标签" href="http://www.w3school.com.cn/tags/tag_html.asp">&lt;html&gt;</A></LI>
+  <LI><A title="HTML <i> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_i.asp">&lt;i&gt;</A></LI>
+  <LI><A title="HTML <iframe> 标签" href="http://www.w3school.com.cn/tags/tag_iframe.asp">&lt;iframe&gt;</A></LI>
+  <LI><A title="HTML <img> 标签" href="http://www.w3school.com.cn/tags/tag_img.asp">&lt;img&gt;</A></LI>
+  <LI><A title="HTML <input> 标签" href="http://www.w3school.com.cn/tags/tag_input.asp">&lt;input&gt;</A></LI>
+  <LI><A title="HTML <ins> 标签" href="http://www.w3school.com.cn/tags/tag_ins.asp">&lt;ins&gt;</A></LI>
+  <LI><A title="HTML <kbd> 标签" href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp">&lt;kbd&gt;</A></LI>
+  <LI><A title="HTML <keygen> 标签" href="http://www.w3school.com.cn/tags/tag_keygen.asp">&lt;keygen&gt;</A></LI>
+  <LI><A title="HTML <label> 标签" href="http://www.w3school.com.cn/tags/tag_label.asp">&lt;label&gt;</A></LI>
+  <LI><A title="HTML <legend> 标签" href="http://www.w3school.com.cn/tags/tag_legend.asp">&lt;legend&gt;</A></LI>
+  <LI><A title="HTML <li> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_li.asp">&lt;li&gt;</A></LI>
+  <LI><A title="HTML <link> 标签" href="http://www.w3school.com.cn/tags/tag_link.asp">&lt;link&gt;</A></LI>
+  <LI><A title="HTML <main> 标签" href="http://www.w3school.com.cn/tags/tag_main.asp">&lt;main&gt;</A></LI>
+  <LI><A title="HTML <map> 标签" href="http://www.w3school.com.cn/tags/tag_map.asp">&lt;map&gt;</A></LI>
+  <LI><A title="HTML <mark> 标签" href="http://www.w3school.com.cn/tags/tag_mark.asp">&lt;mark&gt;</A></LI>
+  <LI><A title="HTML <menu> 标签" href="http://www.w3school.com.cn/tags/tag_menu.asp">&lt;menu&gt;</A></LI>
+  <LI><A title="HTML <menuitem> 标签" href="http://www.w3school.com.cn/tags/tag_menuitem.asp">&lt;menuitem&gt;</A></LI>
+  <LI><A title="HTML <meta> 标签" href="http://www.w3school.com.cn/tags/tag_meta.asp">&lt;meta&gt;</A></LI>
+  <LI><A title="HTML <meter> 标签" href="http://www.w3school.com.cn/tags/tag_meter.asp">&lt;meter&gt;</A></LI>
+  <LI><A title="HTML <nav> 标签" href="http://www.w3school.com.cn/tags/tag_nav.asp">&lt;nav&gt;</A></LI>
+  <LI><A title="HTML <noframes> 标签" href="http://www.w3school.com.cn/tags/tag_noframes.asp">&lt;noframes&gt;</A></LI>
+  <LI><A title="HTML <noscript> 标签" href="http://www.w3school.com.cn/tags/tag_noscript.asp">&lt;noscript&gt;</A></LI>
+  <LI><A title="HTML <object> 标签" href="http://www.w3school.com.cn/tags/tag_object.asp">&lt;object&gt;</A></LI>
+  <LI><A title="HTML <ol> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_ol.asp">&lt;ol&gt;</A></LI>
+  <LI><A title="HTML <optgroup> 标签" href="http://www.w3school.com.cn/tags/tag_optgroup.asp">&lt;optgroup&gt;</A></LI>
+  <LI><A title="HTML <option> 标签" href="http://www.w3school.com.cn/tags/tag_option.asp">&lt;option&gt;</A></LI>
+  <LI><A title="HTML <output> 标签" href="http://www.w3school.com.cn/tags/tag_output.asp">&lt;output&gt;</A></LI>
+  <LI><A title="HTML <p> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_p.asp">&lt;p&gt;</A></LI>
+  <LI><A title="HTML <param> 标签" href="http://www.w3school.com.cn/tags/tag_param.asp">&lt;param&gt;</A></LI>
+  <LI><A title="HTML <pre> 标签" href="http://www.w3school.com.cn/tags/tag_pre.asp">&lt;pre&gt;</A></LI>
+  <LI><A title="HTML <progress> 标签" href="http://www.w3school.com.cn/tags/tag_progress.asp">&lt;progress&gt;</A></LI>
+  <LI><A title="HTML <q> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_q.asp">&lt;q&gt;</A></LI>
+  <LI><A title="HTML <rp> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_rp.asp">&lt;rp&gt;</A></LI>
+  <LI><A title="HTML <rt> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_rt.asp">&lt;rt&gt;</A></LI>
+  <LI><A title="HTML <ruby> 标签" href="http://www.w3school.com.cn/tags/tag_ruby.asp">&lt;ruby&gt;</A></LI>
+  <LI><A title="HTML <s> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_s.asp">&lt;s&gt;</A></LI>
+  <LI><A title="HTML <samp> 标签" href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp">&lt;samp&gt;</A></LI>
+  <LI><A title="HTML <script> 标签" href="http://www.w3school.com.cn/tags/tag_script.asp">&lt;script&gt;</A></LI>
+  <LI><A title="HTML <section> 标签" href="http://www.w3school.com.cn/tags/tag_section.asp">&lt;section&gt;</A></LI>
+  <LI><A title="HTML <select> 标签" href="http://www.w3school.com.cn/tags/tag_select.asp">&lt;select&gt;</A></LI>
+  <LI><A title="HTML <small> 标签" href="http://www.w3school.com.cn/tags/tag_small.asp">&lt;small&gt;</A></LI>
+  <LI><A title="HTML <source> 标签" href="http://www.w3school.com.cn/tags/tag_source.asp">&lt;source&gt;</A></LI>
+  <LI><A title="HTML <span> 标签" href="http://www.w3school.com.cn/tags/tag_span.asp">&lt;span&gt;</A></LI>
+  <LI><A title="HTML <strike> 标签" href="http://www.w3school.com.cn/tags/tag_strike.asp">&lt;strike&gt;</A></LI>
+  <LI><A title="HTML <strong> 标签" href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp">&lt;strong&gt;</A></LI>
+  <LI><A title="HTML <style> 标签" href="http://www.w3school.com.cn/tags/tag_style.asp">&lt;style&gt;</A></LI>
+  <LI><A title="HTML <sub> 标签" href="http://www.w3school.com.cn/tags/tag_sub.asp">&lt;sub&gt;</A></LI>
+  <LI><A title="HTML <summary> 标签" href="http://www.w3school.com.cn/tags/tag_summary.asp">&lt;summary&gt;</A></LI>
+  <LI><A title="HTML <sup> 标签" href="http://www.w3school.com.cn/tags/tag_sup.asp">&lt;sup&gt;</A></LI>
+  <LI><A title="HTML <table> 标签" href="http://www.w3school.com.cn/tags/tag_table.asp">&lt;table&gt;</A></LI>
+  <LI><A title="HTML <tbody> 标签" href="http://www.w3school.com.cn/tags/tag_tbody.asp">&lt;tbody&gt;</A></LI>
+  <LI><A title="HTML <td> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_td.asp">&lt;td&gt;</A></LI>
+  <LI><A title="HTML <textarea> 标签" href="http://www.w3school.com.cn/tags/tag_textarea.asp">&lt;textarea&gt;</A></LI>
+  <LI><A title="HTML <tfoot> 标签" href="http://www.w3school.com.cn/tags/tag_tfoot.asp">&lt;tfoot&gt;</A></LI>
+  <LI><A title="HTML <th> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_th.asp">&lt;th&gt;</A></LI>
+  <LI><A title="HTML <thead> 标签" href="http://www.w3school.com.cn/tags/tag_thead.asp">&lt;thead&gt;</A></LI>
+  <LI><A title="HTML <time> 标签" href="http://www.w3school.com.cn/tags/tag_time.asp">&lt;time&gt;</A></LI>
+  <LI><A title="HTML <title> 标签" href="http://www.w3school.com.cn/tags/tag_title.asp">&lt;title&gt;</A></LI>
+  <LI><A title="HTML <tr> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_tr.asp">&lt;tr&gt;</A></LI>
+  <LI><A title="HTML <track> 标签" href="http://www.w3school.com.cn/tags/tag_track.asp">&lt;track&gt;</A></LI>
+  <LI><A title="HTML <tt> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_tt.asp">&lt;tt&gt;</A></LI>
+  <LI><A title="HTML <u> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_u.asp">&lt;u&gt;</A></LI>
+  <LI><A title="HTML <ul> 标签" 
+  href="http://www.w3school.com.cn/tags/tag_ul.asp">&lt;ul&gt;</A></LI>
+  <LI><A title="HTML <var> 标签" href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp">&lt;var&gt;</A></LI>
+  <LI><A title="HTML <video> 标签" href="http://www.w3school.com.cn/tags/tag_video.asp">&lt;video&gt;</A></LI>
+  <LI><A title="HTML <wbr> 标签" href="http://www.w3school.com.cn/tags/tag_wbr.asp">&lt;wbr&gt;</A></LI>
+</UL></DIV>
+<DIV id="selected">
+<H2>建站手册</H2>
+<UL>
+  <LI><A title="网站构建" 
+  href="http://www.w3school.com.cn/site/index.asp">网站构建</A></LI>
+  <LI><A title="万维网联盟 (W3C)" 
+  href="http://www.w3school.com.cn/w3c/index.asp">万维网联盟 (W3C)</A></LI>
+  <LI><A title="浏览器信息" 
+  href="http://www.w3school.com.cn/browsers/index.asp">浏览器信息</A></LI>
+  <LI><A title="网站品质" 
+  href="http://www.w3school.com.cn/quality/index.asp">网站品质</A></LI>
+  <LI><A title="语义网" 
+  href="http://www.w3school.com.cn/semweb/index.asp">语义网</A></LI>
+  <LI><A title="职业规划" 
+  href="http://www.w3school.com.cn/careers/index.asp">职业规划</A></LI>
+  <LI><A title="网站主机" 
+  href="http://www.w3school.com.cn/hosting/index.asp">网站主机</A></LI></UL>
+<H2><A id="link_about" title="关于 W3School" href="http://www.w3school.com.cn/about/index.asp">关于 
+W3School</A></H2>
+<H2><A id="link_help" title="帮助 W3School" href="http://www.w3school.com.cn/about/about_helping.asp">帮助 
+W3School</A></H2></DIV></DIV>
+<DIV id="maincontent">
+<H1>HTML 事件属性</H1>
+<DIV id="tpn">
+<UL class="prenext">
+  <LI class="pre"><A title="HTML 标准属性" href="http://www.w3school.com.cn/tags/html_ref_standardattributes.asp">HTML 
+  属性</A></LI>
+  <LI class="next"><A title="HTML Audio/Video DOM 属性" href="http://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp">HTML 
+  视频/音频</A></LI></UL></DIV>
+<DIV id="intro">
+<H2>全局事件属性</H2>
+<P>HTML 4 增加了使事件在浏览器中触发动作的能力，比如当用户点击元素时启动 JavaScript。</P>
+<P>如需学习更多有关事件编程的知识，请访问我们的 JavaScript 教程。</P>
+<P>下面列出了添加到 HTML 元素以定义事件动作的全局事件属性。</P>
+<P class="html5_new_note">= HTML5 中新的事件属性。</P></DIV>
+<DIV>
+<H2>Window 事件属性</H2>
+<P>针对 window 对象触发的事件（应用到 &lt;body&gt; 标签）：</P>
+<TABLE class="dataintable">
+  <TBODY>
+  <TR>
+    <TH style="width: 27%;">属性</TH>
+    <TH style="width: 8%;">值</TH>
+    <TH>描述</TH></TR>
+  <TR>
+    <TD class="html5_new"><A title="HTML onafterprint 事件属性" href="http://www.w3school.com.cn/tags/event_onafterprint.asp">onafterprint</A></TD>
+    <TD>script</TD>
+    <TD>文档打印之后运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new"><A title="HTML onbeforeprint 事件属性" href="http://www.w3school.com.cn/tags/event_onbeforeprint.asp">onbeforeprint</A></TD>
+    <TD>script</TD>
+    <TD>文档打印之前运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onbeforeunload</TD>
+    <TD>script</TD>
+    <TD>文档卸载之前运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onerror</TD>
+    <TD>script</TD>
+    <TD>在错误发生时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onhaschange</TD>
+    <TD>script</TD>
+    <TD>当文档已改变时运行的脚本。</TD></TR>
+  <TR>
+    <TD><A title="HTML onload 事件属性" href="http://www.w3school.com.cn/tags/event_onload.asp">onload</A></TD>
+    <TD>script</TD>
+    <TD>页面结束加载之后触发。</TD></TR>
+  <TR>
+    <TD class="html5_new">onmessage</TD>
+    <TD>script</TD>
+    <TD>在消息被触发时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onoffline</TD>
+    <TD>script</TD>
+    <TD>当文档离线时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ononline</TD>
+    <TD>script</TD>
+    <TD>当文档上线时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onpagehide</TD>
+    <TD>script</TD>
+    <TD>当窗口隐藏时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onpageshow</TD>
+    <TD>script</TD>
+    <TD>当窗口成为可见时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onpopstate</TD>
+    <TD>script</TD>
+    <TD>当窗口历史记录改变时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onredo</TD>
+    <TD>script</TD>
+    <TD>当文档执行撤销（redo）时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new"><A title="HTML onresize 事件属性" href="http://www.w3school.com.cn/tags/event_onresize.asp">onresize</A></TD>
+    <TD>script</TD>
+    <TD>当浏览器窗口被调整大小时触发。</TD></TR>
+  <TR>
+    <TD class="html5_new">onstorage</TD>
+    <TD>script</TD>
+    <TD>在 Web Storage 区域更新后运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onundo</TD>
+    <TD>script</TD>
+    <TD>在文档执行 undo 时运行的脚本。</TD></TR>
+  <TR>
+    <TD><A title="HTML onunload 事件属性" href="http://www.w3school.com.cn/tags/event_onunload.asp">onunload</A></TD>
+    <TD>script</TD>
+    <TD>一旦页面已下载时触发（或者浏览器窗口已被关闭）。</TD></TR></TBODY></TABLE></DIV>
+<DIV>
+<H2>Form 事件</H2>
+<P>由 HTML 表单内的动作触发的事件（应用到几乎所有 HTML 元素，但最常用在 form 元素中）：</P>
+<TABLE class="dataintable">
+  <TBODY>
+  <TR>
+    <TH style="width: 27%;">属性</TH>
+    <TH style="width: 8%;">值</TH>
+    <TH>描述</TH></TR>
+  <TR>
+    <TD><A title="HTML onblur 事件属性" href="http://www.w3school.com.cn/tags/event_onblur.asp">onblur</A></TD>
+    <TD>script</TD>
+    <TD>元素失去焦点时运行的脚本。</TD></TR>
+  <TR>
+    <TD><A title="HTML onchange 事件属性" href="http://www.w3school.com.cn/tags/event_onchange.asp">onchange</A></TD>
+    <TD>script</TD>
+    <TD>在元素值被改变时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">oncontextmenu</TD>
+    <TD>script</TD>
+    <TD>当上下文菜单被触发时运行的脚本。</TD></TR>
+  <TR>
+    <TD><A title="HTML onfocus 事件属性" href="http://www.w3school.com.cn/tags/event_onfocus.asp">onfocus</A></TD>
+    <TD>script</TD>
+    <TD>当元素失去焦点时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onformchange</TD>
+    <TD>script</TD>
+    <TD>在表单改变时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onforminput</TD>
+    <TD>script</TD>
+    <TD>当表单获得用户输入时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">oninput</TD>
+    <TD>script</TD>
+    <TD>当元素获得用户输入时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">oninvalid</TD>
+    <TD>script</TD>
+    <TD>当元素无效时运行的脚本。</TD></TR>
+  <TR>
+    <TD>onreset</TD>
+    <TD>script</TD>
+    <TD>当表单中的重置按钮被点击时触发。HTML5 中不支持。</TD></TR>
+  <TR>
+    <TD><A title="HTML onselect 事件属性" href="http://www.w3school.com.cn/tags/event_onselect.asp">onselect</A></TD>
+    <TD>script</TD>
+    <TD>在元素中文本被选中后触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML onsubmit 事件属性" href="http://www.w3school.com.cn/tags/event_onsubmit.asp">onsubmit</A></TD>
+    <TD>script</TD>
+    <TD>在提交表单时触发。</TD></TR></TBODY></TABLE></DIV>
+<DIV>
+<H2>Keyboard 事件</H2>
+<TABLE class="dataintable">
+  <TBODY>
+  <TR>
+    <TH style="width: 27%;">属性</TH>
+    <TH style="width: 8%;">值</TH>
+    <TH>描述</TH></TR>
+  <TR>
+    <TD><A title="HTML onkeydown 事件属性" href="http://www.w3school.com.cn/tags/event_onkeydown.asp">onkeydown</A></TD>
+    <TD>script</TD>
+    <TD>在用户按下按键时触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML onkeypress 事件属性" href="http://www.w3school.com.cn/tags/event_onkeypress.asp">onkeypress</A></TD>
+    <TD>script</TD>
+    <TD>在用户敲击按钮时触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML onkeyup 事件属性" href="http://www.w3school.com.cn/tags/event_onkeyup.asp">onkeyup</A></TD>
+    <TD>script</TD>
+    <TD>当用户释放按键时触发。</TD></TR></TBODY></TABLE></DIV>
+<DIV>
+<H2>Mouse 事件</H2>
+<P>由鼠标或类似用户动作触发的事件：</P>
+<TABLE class="dataintable">
+  <TBODY>
+  <TR>
+    <TH style="width: 27%;">属性</TH>
+    <TH style="width: 8%;">值</TH>
+    <TH>描述</TH></TR>
+  <TR>
+    <TD><A title="HTML onclick 事件属性" href="http://www.w3school.com.cn/tags/event_onclick.asp">onclick</A></TD>
+    <TD>script</TD>
+    <TD>元素上发生鼠标点击时触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML ondblclick 事件属性" href="http://www.w3school.com.cn/tags/event_ondblclick.asp">ondblclick</A></TD>
+    <TD>script</TD>
+    <TD>元素上发生鼠标双击时触发。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondrag</TD>
+    <TD>script</TD>
+    <TD>元素被拖动时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondragend</TD>
+    <TD>script</TD>
+    <TD>在拖动操作末端运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondragenter</TD>
+    <TD>script</TD>
+    <TD>当元素元素已被拖动到有效拖放区域时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondragleave</TD>
+    <TD>script</TD>
+    <TD>当元素离开有效拖放目标时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondragover</TD>
+    <TD>script</TD>
+    <TD>当元素在有效拖放目标上正在被拖动时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondragstart</TD>
+    <TD>script</TD>
+    <TD>在拖动操作开端运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondrop</TD>
+    <TD>script</TD>
+    <TD>当被拖元素正在被拖放时运行的脚本。</TD></TR>
+  <TR>
+    <TD><A title="HTML onmousedown 事件属性" href="http://www.w3school.com.cn/tags/event_onmousedown.asp">onmousedown</A></TD>
+    <TD>script</TD>
+    <TD>当元素上按下鼠标按钮时触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML onmousemove 事件属性" href="http://www.w3school.com.cn/tags/event_onmousemove.asp">onmousemove</A></TD>
+    <TD>script</TD>
+    <TD>当鼠标指针移动到元素上时触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML onmouseout 事件属性" href="http://www.w3school.com.cn/tags/event_onmouseout.asp">onmouseout</A></TD>
+    <TD>script</TD>
+    <TD>当鼠标指针移出元素时触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML onmouseover 事件属性" href="http://www.w3school.com.cn/tags/event_onmouseover.asp">onmouseover</A></TD>
+    <TD>script</TD>
+    <TD>当鼠标指针移动到元素上时触发。</TD></TR>
+  <TR>
+    <TD><A title="HTML onmouseup 事件属性" href="http://www.w3school.com.cn/tags/event_onmouseup.asp">onmouseup</A></TD>
+    <TD>script</TD>
+    <TD>当在元素上释放鼠标按钮时触发。</TD></TR>
+  <TR>
+    <TD class="html5_new">onmousewheel</TD>
+    <TD>script</TD>
+    <TD>当鼠标滚轮正在被滚动时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onscroll</TD>
+    <TD>script</TD>
+    <TD>当元素滚动条被滚动时运行的脚本。</TD></TR></TBODY></TABLE></DIV>
+<DIV>
+<H2>Media 事件</H2>
+<P>由媒介（比如视频、图像和音频）触发的事件（适用于所有 HTML 元素，但常见于媒介元素中，比如 
+&lt;audio&gt;、&lt;embed&gt;、&lt;img&gt;、&lt;object&gt; 以及 &lt;video&gt;）:</P>
+<TABLE class="dataintable">
+  <TBODY>
+  <TR>
+    <TH style="width: 27%;">属性</TH>
+    <TH style="width: 8%;">值</TH>
+    <TH>描述</TH></TR>
+  <TR>
+    <TD>onabort</TD>
+    <TD>script</TD>
+    <TD>在退出时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">oncanplay</TD>
+    <TD>script</TD>
+    <TD>当文件就绪可以开始播放时运行的脚本（缓冲已足够开始时）。</TD></TR>
+  <TR>
+    <TD class="html5_new">oncanplaythrough</TD>
+    <TD>script</TD>
+    <TD>当媒介能够无需因缓冲而停止即可播放至结尾时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ondurationchange</TD>
+    <TD>script</TD>
+    <TD>当媒介长度改变时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onemptied</TD>
+    <TD>script</TD>
+    <TD>当发生故障并且文件突然不可用时运行的脚本（比如连接意外断开时）。</TD></TR>
+  <TR>
+    <TD class="html5_new">onended</TD>
+    <TD>script</TD>
+    <TD>当媒介已到达结尾时运行的脚本（可发送类似“感谢观看”之类的消息）。</TD></TR>
+  <TR>
+    <TD class="html5_new">onerror</TD>
+    <TD>script</TD>
+    <TD>当在文件加载期间发生错误时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onloadeddata</TD>
+    <TD>script</TD>
+    <TD>当媒介数据已加载时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onloadedmetadata</TD>
+    <TD>script</TD>
+    <TD>当元数据（比如分辨率和时长）被加载时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onloadstart</TD>
+    <TD>script</TD>
+    <TD>在文件开始加载且未实际加载任何数据前运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onpause</TD>
+    <TD>script</TD>
+    <TD>当媒介被用户或程序暂停时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onplay</TD>
+    <TD>script</TD>
+    <TD>当媒介已就绪可以开始播放时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onplaying</TD>
+    <TD>script</TD>
+    <TD>当媒介已开始播放时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onprogress</TD>
+    <TD>script</TD>
+    <TD>当浏览器正在获取媒介数据时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onratechange</TD>
+    <TD>script</TD>
+    <TD>每当回放速率改变时运行的脚本（比如当用户切换到慢动作或快进模式）。</TD></TR>
+  <TR>
+    <TD class="html5_new">onreadystatechange</TD>
+    <TD>script</TD>
+    <TD>每当就绪状态改变时运行的脚本（就绪状态监测媒介数据的状态）。</TD></TR>
+  <TR>
+    <TD class="html5_new">onseeked</TD>
+    <TD>script</TD>
+    <TD>当 seeking 属性设置为 false（指示定位已结束）时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onseeking</TD>
+    <TD>script</TD>
+    <TD>当 seeking 属性设置为 true（指示定位是活动的）时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onstalled</TD>
+    <TD>script</TD>
+    <TD>在浏览器不论何种原因未能取回媒介数据时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onsuspend</TD>
+    <TD>script</TD>
+    <TD>在媒介数据完全加载之前不论何种原因终止取回媒介数据时运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">ontimeupdate</TD>
+    <TD>script</TD>
+    <TD>当播放位置改变时（比如当用户快进到媒介中一个不同的位置时）运行的脚本。</TD></TR>
+  <TR>
+    <TD class="html5_new">onvolumechange</TD>
+    <TD>script</TD>
+    <TD>每当音量改变时（包括将音量设置为静音）时运行的脚本。</TD></TR>
+  <TR>
+    <TD>onwaiting</TD>
+    <TD>script</TD>
+    <TD>当媒介已停止播放但打算继续播放时（比如当媒介暂停已缓冲更多数据）运行脚本</TD></TR></TBODY></TABLE></DIV>
+<DIV id="bpn">
+<UL class="prenext">
+  <LI class="pre"><A title="HTML 标准属性" href="http://www.w3school.com.cn/tags/html_ref_standardattributes.asp">HTML 
+  属性</A></LI>
+  <LI class="next"><A title="HTML Audio/Video DOM 属性" href="http://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp">HTML 
+  视频/音频</A></LI></UL></DIV></DIV><!-- maincontent end -->
+<DIV id="sidebar">
+<DIV id="searchui">
+<FORM id="searchform" method="get" action="http://www.google.com.hk/search">
+<P><LABEL for="searched_content">Search:</LABEL></P>
+<P><INPUT name="sitesearch" value="w3school.com.cn" type="hidden"></P>
+<P><INPUT id="searched_content" class="box" title="在此输入搜索内容。" name="as_q" type="text"><INPUT class="button" title="搜索！" value="Go" type="submit"></P></FORM></DIV>
+<DIV id="tools">
+<H5 id="tools_reference"><A 
+href="http://www.w3school.com.cn/tags/index.asp">HTML 参考手册</A></H5>
+<H5 id="tools_example"><A href="http://www.w3school.com.cn/example/html_examples.asp">HTML 
+实例</A></H5>
+<H5 id="tools_quiz"><A href="http://www.w3school.com.cn/html/html_quiz.asp">HTML 
+测验</A></H5></DIV>
+<DIV id="ad">
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "ca-pub-3381531532877742";
+/* sidebar-160x600 */
+google_ad_slot = "3772569310";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="html_ref_eventattributes.files/f.txt">
+</SCRIPT>
+</DIV></DIV>
+<DIV id="footer">
+<P>W3School 提供的内容仅用于培训。我们不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。W3School 
+简体中文版的所有内容仅供测试，对任何法律问题及风险不承担任何责任。</P>
+<P>当使用本站时，代表您已接受了本站的<A title="关于使用" href="http://www.w3school.com.cn/about/about_use.asp">使用条款</A>和<A 
+title="关于隐私" 
+href="http://www.w3school.com.cn/about/about_privacy.asp">隐私条款</A>。版权所有，保留一切权利。
+ 赞助商：<A title="上海赢科投资有限公司" href="http://www.yktz.net/">上海赢科投资有限公司</A>。<A href="http://www.miitbeian.gov.cn/">蒙ICP备06004630号</A>
+</P></DIV></DIV><!-- wrapper end --></BODY></HTML>

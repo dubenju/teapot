@@ -1,0 +1,28 @@
+
+.h_mainNavNew{width:980px;height:26px;margin:0 auto; padding:7px 10px 3px; font-family:"Microsoft YaHei"; position:relative; z-index:9999; background:#fff;}
+.h_mainNavNew .list_menu{float:left;width:774px; height:24px; line-height:24px;list-style:none;}
+.h_mainNavNew .list_menu li{float:left; background:url(http://localhost:8080/teapot/resources/image/line.gif) no-repeat left center; padding:0 9px 0 9px;}
+
+.h_mainNavNew .morehNew{width:48px; float:left;} */
+.h_mainNavNew .morehNew ul{width:48px;list-style:none;}
+.h_mainNavNew .morehNew ul li{color:#2b2b2b; height:24px; line-height:24px; background:url(http://localhost:8080/teapot/resources/image/more.gif) no-repeat 33px center;}
+.h_mainNavNew .morehNew ul li:hover{background:#f1f1f1 url(http://localhost:8080/teapot/resources/image/more.gif) no-repeat 33px center;}
+.h_mainNavNew .morehNew ul li a{height:24px; line-height:24px; color:#2b2b2b; display:block;width:40px; padding-left:8px;}
+.h_mainNavNew .morehNew ul li a:hover{background:#f1f1f1 url(http://localhost:8080/teapot/resources/image/more.gif) no-repeat 33px center;  color:#2b2b2b; text-decoration:none;}
+.h_mainNavNew .morehNew ul li ul{display:none; position:absolute; background:#f1f1f1;}
+.h_mainNavNew .morehNew ul li ul li{width:48px; background:none; padding-left:0;}
+.h_mainNavNew .morehNew ul li ul li a:hover{background:#b9b9b9; background-image:none;}
+ .h_mainNavNew .morehNew ul li:hover ul {display:block;}
+
+.h_mainNavNew .login{ width:158px; _width:155px; height:24px; line-height:24px; text-align:right; color:#666; overflow:hidden; float:left; }
+.h_mainNavNew .login a{ color:#666; margin-left:6px;}
+.h_mainNavNew .login a:hover{text-decoration: underline;}
+
+.h_mainNavNew .cRed{float: left;width: 125px;height: 24px;overflow: hidden;}
+.h_mainNavNew .cRed span{float: left;height: 24px;overflow: hidden;}
+.h_mainNavNew .cRed a{margin-left: 0;}
+.h_mainNavNew .cRed, .cRed a:link, .cRed a:visited, .cRed a:hover, .cRed a:active {color:#f54343;}/*150713a*/
+.cDGray a:hover{color:#f54343;}/*150713a*/
+.h_mainNavNew a.cGray{margin-left:0;}
+
+.f-header-ifr iframe{position:absolute;top:0; left:0;opacity:0;filter:alpha(opacity=0);z-index:-1;}
