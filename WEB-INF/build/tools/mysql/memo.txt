@@ -1,0 +1,23 @@
+net start mysql
+net stop mysql
+mysql -u root -p
+
+show variables like "char%";
+show databases;
+
+
+1.创建数据库表 
+mysql>CREATE DATABASE IF NOT EXISTS my_db default charset utf8 COLLATE utf8_general_ci; 
+#注意后面这句话 "COLLATE utf8_general_ci",大致意思是在排序时根据utf8变码格式来排序 
+#那么在这个数据库下创建的所有数据表的默认字符集都会是utf8了 
+mysql>create table my_table (name varchar(20) not null default '') type=myisam default charset utf8;
+
+
+create database IF NOT EXISTS teapot DEFAULT CHARACTER SET = utf8 COLLATE utf8_general_ci;
+
+quit
+drop database teapot;
+
+connect teapot;
+show tables;
+drop table xxx;
