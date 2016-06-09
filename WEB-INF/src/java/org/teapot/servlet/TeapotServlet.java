@@ -137,7 +137,7 @@ public class TeapotServlet extends HttpServlet {
             "<HEAD><TITLE>Hello</TITLE></HEAD>\n" +
             "<BODY BGCOLOR=\"#FDF5E6\">\n" +
             "<H1>Hello</H1>\n" +
-            "<FORM ACTION=\"/micro/AAA\">" +
+            "<FORM ACTION=\"/teapot/t/AAA\">" +
             "First Parameter:<INPUT TYPE=\"TEXT\" NAME=\"param1\">\n" +
             "<INPUT TYPE=\"SUBMIT\">\n" +
             "</FORM>\n" +
