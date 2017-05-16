@@ -1,0 +1,6 @@
+こんにちは、{{ word }}
+{% for person in persons %}
+  姓： {{ person.lastName }} 名： {{ person.firstName }}
+{% endfor %}
+escape?: {{ containTag }}
+escape?: {{ containTag | escape }}

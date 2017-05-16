@@ -1,0 +1,9 @@
+<!-- #set(String word, List<org.littlewings.template.httl.Person> persons, String containTag) -->
+こんにちは、${word}
+
+<!-- #for(org.littlewings.template.httl.Person person : persons) -->
+  姓： ${person.lastName} 名： ${person.firstName}
+<!-- #end -->
+
+escape?: ${containTag}
+raw?: $!{containTag}

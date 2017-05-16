@@ -11,5 +11,27 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/commons-fileupload-1.3.1.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/mysql-connector-java-5.1.35-bin.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/freemarker-2.3.26-incubating.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/beetl-2.7.12.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/thymeleaf-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/ognl-3.1.12.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/attoparser-2.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/unbescape-1.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/rythm-engine-1.1.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mvel2-2.1.5.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/pat-1.5.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/ecj-4.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/guava-21.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/concurrentlinkedhashmap-lru-1.4.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/parboiled-core-1.1.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/parboiled-java-1.1.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/asm-all-5.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httl-1.0.11.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jtwig-core-5.85.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jtwig-reflection-5.85.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/coverity-escapers-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/pebble-2.3.0.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

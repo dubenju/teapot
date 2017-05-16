@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+  <title>茶壶开源 - 开源，交流</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="http://localhost:8080/teapot/resources/css/basic_new_v2.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://localhost:8080/teapot/resources/css/list_v2.css" rel="stylesheet" type="text/css" />
+  <script src="http://localhost:8080/teapot/resources/js/BX.1.0.1.U.js"></script>
+  <script src="http://localhost:8080/teapot/resources/js/TabControl.1.2.js"></script>
+</head>
+
+<body bgcolor="#FF0000">
+  <link href="http://localhost:8080/teapot/resources/css/teapot.css" rel="stylesheet" />
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="1024">
+  <!-- Header -->
+  <tr>
+    <td align="center" height="16px">
+
+<div class="h_mainNavNew cDGray" id ="f-header">
+  <ul class="list_menu">
+    <li style="background:none; padding-left:2px;"><a href="http://localhost:8080/teapot/">首页</a></li>
+    <li><a href="http://www.oschina.net/tweets" target="_blank">资讯</a></li>
+  </ul>
+
+  <div class="morehNew" id="f-more">
+    <ul>
+      <li>
+        <a href="http://localhost:8080/teapot/html5/html-audio.html" target="_blank">更多</a>
+        <ul id="f-more-box">
+          <li><a href="http://localhost:8080/teapot/html5/html-audio.html" target="_blank" title="视频">视频</a></li>
+          <li><a href="http://localhost:8080/teapot/html5/html-audio.html" target="_blank" title="旅游">旅游</a></li>
+          <li><a href="http://localhost:8080/teapot/html5/html-audio.html" target="_blank" title="音乐">音乐</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="login" id="js_unlogin_box">
+    <a href="http://localhost:8080/teapot/t/?_a=reg&_c=new-account" target="_blank">注册</a>
+    <a class="f-login" style="cursor:pointer;" id='js_login_btn'>登录</a>
+  </div>
+
+  <div class="login" id="js_userInfo_box" style="display: none;">
+    <span class="cRed">
+      <span class="user" style="width: 120px;">
+        <a href="http://localhost:8080/teapot/?_c=index&amp;_a=my" target="_blank" id='js_userInfo_name'></a>
+      </span>
+    </span>
+    <a class="cGray" id='js_login_exit' style='cursor:pointer;'>退出</a>
+  </div>
+</div>
+
+    </td>
+  </tr>
+  <!-- Logo -->
+  <tr>
+    <td align="center" height="44px">
+      <table border="0" cellpadding="0" cellspacing="0" align="left" height="44px">
+        <tr>
+          <td width="200px">
+            <a href="http://localhost:8080/teapot/" target="_blank">
+              <img src="http://localhost:8080/teapot/resources/image/logo.png" height="44px" width="200px" alt="http://localhost:8080/teapot/"></img>
+            </a>
+          </td>
+          <td width="624px" align="center">
+            <input type="text" size="70" />
+            <input type="button" value="查询" />
+          </td>
+          <td width="200px">&nbsp;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- Lancher -->
+  <tr>
+    <td align="center" height="20px" bgcolor="#FF0000">&nbsp;
+    </td>
+  </tr>
+  <!-- Main -->
+  <tr>
+    <td align="center" height="540px">
+      <table border="1" cellpadding="0" cellspacing="0" align="center" height="540px">
+        <tr>
+          <td width="200px" bgcolor="#00FF00">1
+          </td>
+          <td width="624px" >2
+
+
+<div>
+<table>
+<tr>
+<td><a href="http://localhost:8080/teapot/html5/html-audio.html">html-audio</a>
+</td>
+</tr>
+</table>
+</div>
+
+<div style="color:#00FF00">
+<table>
+<tr>
+<td><a href="http://localhost:8080/teapot/html5/html-audio.html">html-audio</a>
+</td>
+</tr>
+</table>
+</div>
+
+<div>
+<table>
+<tr>
+<td><a href="http://localhost:8080/teapot/html5/html-audio.html">html-audio</a>
+</td>
+</tr>
+</table>
+</div>
+
+          </td>
+          <td width="200px">3
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- somthing -->
+  <tr>
+    <td align="center" height="40px" bgcolor="#00FFFF">&nbsp;
+    </td>
+  </tr>
+  <!-- Footer -->
+  <tr>
+    <td align="center">xx公司&nbsp;版权所有&nbsp;Copyright&nbsp;©2017&nbsp;xx&nbsp;Inc.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

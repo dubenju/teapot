@@ -1,0 +1,57 @@
+#**
+文档格式@author du
+*##*
+  块注释
+*### 单行注释
+-----变量的定义-----
+#set($var1 = "" )
+$var1 = "no set"
+-----变量赋值-----
+#set($var2 = "www" )
+-----变量取值-----
+测试 $msgObj
+\$var1=$var1
+\$var2=$var2
+\$name=$name
+\${name}=${name}
+\$!name=$!name
+\$!{name}=$!{name}
+#set($name="Tom")
+\$name=$name
+\${name}${name}
+\$!name=$!name
+\$!{name}$!{name}
+-----分支-----
+#if($name == "")
+\$name=空白
+#elseif("$!name" == "")
+\$name=null
+#else
+\$name=$name
+#end
+-----循环-----
+#set( $list = ["pine", "oak", "maple"])
+#foreach ($element in $list)
+${velocityCount} This is $element. $velocityHasNext
+#end
+<table border=1>
+#set($i=0)
+#foreach( $cells in [["a","b"],["c","d"]])
+<tr><td>$velocityCount</td>
+#set($j=0)
+#foreach($item in $cells)
+<td>${i}-$j $item</td>
+#set($j=$j + 1)
+#end
+</tr>
+ #set($i=$i + 1)
+#end
+</table>
+-----break-----
+#set($titles=["a", "b"])
+#foreach( $title in $titles )
+    #if( $velocityCount > 1 )
+        #break
+    #end
+    $title
+#end

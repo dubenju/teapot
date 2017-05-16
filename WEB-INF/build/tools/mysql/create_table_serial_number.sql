@@ -21,3 +21,4 @@ CREATE TABLE serial_number
 
 
 insert into serial_number value ('system', 'category', 'id', '0', '1', '998', '20160608', '060606', '20160608', '060606', 'admin', 'init');
+insert into serial_number value ('business', 'user', 'id', '0', '1', '99999999999', '20170507', '060606', '20170507', '060606', 'admin', 'init');
