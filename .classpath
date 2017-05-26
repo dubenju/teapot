@@ -33,5 +33,7 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/jtwig-reflection-5.85.3.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/coverity-escapers-1.1.1.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/pebble-2.3.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/beetlsql-2.8.11.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/fastjson-1.2.32.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang='zh-cn'>
+<head>
+<meta charset="utf-8">
+<title>我的空间</title></head>
+<body bgcolor="#fdf5e6">
+<script type="text/javascript">
+
+// if localStorage is present, use that
+if (('localStorage' in window) && window.localStorage !== null) {
+
+  // easy object property API
+  localStorage.wishlist = '["unicorn", "Narwhal", "deathbear"]';
+document.write("localStorage<br>");
+var storage = window.localStorage;
+function showStorage(){
+ for(var i=0;i<storage.length;i++){
+  //key(i)获得相应的键，再用getItem()方法获得对应的值
+  document.write(storage.key(i)+ " : " + storage.getItem(storage.key(i)) + "<br>");
+ }
+}
+
+// var storage = window.localStorage;
+if (!storage.getItem("pageLoadCount")) storage.setItem("pageLoadCount",0);
+storage.pageLoadCount = parseInt(storage.getItem("pageLoadCount")) + 1;//必须格式转换
+// document.getElementByIdx_x("count").innerHTML = storage.pageLoadCount;
+showStorage();
+} else {
+
+  // without sessionStorage we'll have to use a far-future cookie
+  // with document.cookie's awkward API
+  var date = new Date();
+  date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+  var expires = date.toGMTString();
+  var cookiestr = 'wishlist=["unicorn", "Narwhal", "deathbear"];' +
+                  ' expires=' + expires + '; path=/';
+  document.cookie = cookiestr;
+document.write("cookie<br>");
+}
+
+document.write("HOST     :  " + location.host + "<br>");
+document.write("HOSTNAME :  " + location.hostname + "<br>");
+document.write("PORT     :  " + location.port + "<br>");
+document.write("REQUEST  :  " + location.pathname + "<br>");
+document.write("CODE     :  " + navigator.appCodeName + "<br>");
+document.write("BROWSER  :  " + navigator.appName + "<br>");
+document.write("VERSION  :  " + navigator.appVersion + "<br>");
+document.write("LANG     :  " + navigator.language + "<br>");
+document.write("PLATFORM :  " + navigator.platform + "<br>");
+document.write("USERAGENT:  " + navigator.userAgent + "<br>");
+document.write("REFERER  :  " + document.referrer + "<br>");
+document.write("DOMAIN   :  " + document.domain + "<br>");
+document.write("SCREEN.W :  " + screen.width + "<br>");
+document.write("SCREEN.H :  " + screen.height + "<br>");
+document.write("SCREEN.COL:  " + screen.colorDepth + "Bit" + "<br>");
+/*
+// Only IE
+function getMac() {
+    var wmi = GetObject("winmgmts:{impersonationLevel=impersonate}");
+    if ( ! wmi ) return false;
+    var pr = wmi.ExecQuery("SELECT MACAddress FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True");
+    if ( ! pr )  return false;
+    try{
+        var e = new Enumerator(pr);
+    } catch ( e ) {
+        return false;
+    }
+    var mac=[],s;
+    for(; !e.atEnd(); e.moveNext() ) {
+        s = e.item();
+        mac.push( s.MACAddress );
+    }
+    return mac;
+}
+document.write("MAC Addr :  " + getMac() + "<br>");
+*/
+
+/*
+function GetLocalIPAddr(){
+ var oSetting = null;
+ var ip = null;
+ try{ oSetting = new ActiveXObject("rcbdyctl.Setting");
+ ip = oSetting.GetIPAddress;
+ if (ip.length == 0){
+ return "没有连接到Internet";
+ }
+ oSetting = null;
+ }catch(e){ return ip;
+ } return ip;
+ }
+ document.write(GetLocalIPAddr()+"<br/>");
+*/
+
+/*
+var WshShell =new ActiveXObject("WScript.Shell");
+document.write("计算机名 = "+ WshShell.ExpandEnvironmentStrings("%COMPUTERNAME%")+"<br/>");
+document.write("登录用户名 = "+ WshShell.ExpandEnvironmentStrings("%USERNAME%")+"<br/>");
+*/
+
+var wshNetwork = new ActiveXObject("WScript.Network");
+document.write("域名       = "+ wshNetwork.UserDomain+"<br/>");
+document.write("计算机名   = "+ wshNetwork.ComputerName+"<br/>");
+document.write("登录用户名 = "+ wshNetwork.UserName+"<br/>");
+</script>
+
+<!-- script type="text/javascript" src="http://counter.sina.com.cn/ip/" charset="gb2312"></script>       --><!--获取接口数据，注意charset -->
+<script type="text/javascript">
+/*
+document.writeln("IP地址："+ILData[0]+"<br />");             //输出接口数据中的IP地址
+document.writeln("地址类型："+ILData[1]+"<br />");         //输出接口数据中的IP地址的类型
+document.writeln("地址类型："+ILData[2]+"<br />");         //输出接口数据中的IP地址的省市
+document.writeln("地址类型："+ILData[3]+"<br />");         //输出接口数据中的IP地址的
+document.writeln("地址类型："+ILData[4]+"<br />");         //输出接口数据中的IP地址的运营商
+*/
+
+        // 有効なMacアドレスで始めに取得した値を返します。
+        function GetMacAddress() {
+            var obj = new ActiveXObject("WbemScripting.SWbemLocator");
+            var s = obj.ConnectServer(".");
+            var properties = s.ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration");
+            var e = new Enumerator(properties);
+            while (!e.atEnd()) {
+                e.moveNext();
+                var p = e.item();
+                if (!p) continue;
+                if (null != p.MACAddress) {
+                    return p.MACAddress;
+                }
+            }
+            return null;
+        }
+document.write(GetMacAddress()+"<br/>");
+
+        // ローカルPC名を返します。。
+        function GetComputerName() {
+            var objNetWork = new ActiveXObject("WScript.Network");
+            return objNetWork.ComputerName;
+        }
+document.write(GetComputerName()+"<br/>");
+
+</script>
+<form method="post" action="http://192.168.11.32:8080/teapot/t/?_a=4" enctype="application/x-www-form-urlencoded" >
+<table border="0" cellspacing="0" cellpadding="0" align="left" valign="top">
+<tr>
+<td>
+<h1>我的空间</h1>
+</td>
+</tr>
+<!-- tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr><td>电子信箱</td><td><input type="text" name="email" value="$!{user.useracnt}"></td></tr>
+<tr><td>昵称</td><td><input type="text" name="nickname" value="$!{user.usernnm}"></td></tr>
+<tr><td>密码</td><td><input type="password" name="passworda" value=""></td></tr>
+<tr><td>确认密码</td><td><input type="password" name="passwordb"value=""></td></tr>
+<tr><td>&nbsp;</td><td><input type="checkbox" name="reg-code">我已阅读并同意《使用协议》</td></tr>
+<tr><td>&nbsp;</td><td><table><tr><td><input type="submit" name="register" value="注册"></td>
+<td>&nbsp;</td><td><input type="submit" name="cancel" value="取消"></td></tr></table></td></tr>
+</table>
+</td></tr -->
+</table>
+</form>
+</body>
+</html>

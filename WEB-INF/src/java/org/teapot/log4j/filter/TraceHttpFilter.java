@@ -2,21 +2,26 @@ package org.teapot.log4j.filter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.net.URLDecoder;
 import java.util.Collection;
 import java.util.Enumeration;
+import java.util.Map;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+
+
 //TODO:Services
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.teapot.log4j.servlet.DbjResponseWrapper;
 
 /**
@@ -42,13 +47,15 @@ public class TraceHttpFilter extends AbstractFilter {
         // HTTP请求报文由请求行（request line）、请求头部（header）、空行和请求数据4部分组成
         HttpServletRequest req = (HttpServletRequest) request;
         log.info("HttpServletRequest---------------------------------");
+
         // 请求行 请求行由请求方法字段、URL字段和HTTP协议版本字段3个字段组成，它们用空格分隔。
         // 请求方法
         System.out.print(req.getMethod());
         System.out.print(" ");
         // URL
         System.out.print(req.getRequestURL());
-        System.out.print(" ");
+        System.out.println(" ");
+
         // HTTP协议版本
         log.info(req.getProtocol());
 
@@ -62,11 +69,22 @@ public class TraceHttpFilter extends AbstractFilter {
         }
 
         // 空行，发送回车符和换行符，通知服务器以下不再有请求头。
-        log.info("\n");
+        log.info(" ");
 
         // 请求数据不在GET方法中使用，而是在POST方法中使用。POST方法适用于需要客户填写表单的场合。
         // 与请求数据相关的最常使用的请求头是Content-Type和Content-Length。
-        log.info("ContentType:" + req.getContentType());
+        String contentType = req.getContentType();
+        String splitRegex = "";
+        log.info("ContentType:" + contentType); // text/plain
+        if (contentType == null) {
+        } else if ("text/plain".equalsIgnoreCase(contentType)) {
+            splitRegex = "\r\n";
+        } else if ("application/x-www-form-urlencoded".equalsIgnoreCase(contentType)) {
+            splitRegex = "&";
+        } else if (contentType.toLowerCase().startsWith("multipart/form-data")) {
+            // multipart/form-data; boundary=---------------------------7e1234101d0726
+            splitRegex = contentType.substring(contentType.indexOf("; boundary=") + "; boundary=".length());
+        }
         long contentLength = req.getContentLengthLong();
         log.info("ContentLength:" + contentLength);
         if (contentLength > 0) {
@@ -84,7 +102,20 @@ public class TraceHttpFilter extends AbstractFilter {
             bfr.read(cbuf);
             String line = new String(cbuf);
             log.info(line);
+            if("application/x-www-form-urlencoded".equalsIgnoreCase(contentType)) {
+                line = URLDecoder.decode(line, "UTF-8");
+                log.info(line);
+            }
             bfr.reset();
+            String[] sary = line.split(splitRegex); // ContentType
+            for (int i = 0; i < sary.length; i ++) {
+                String s = sary[i];
+                String[] kv = s.split("=");
+                if (kv.length ==2) {
+                    log.info(kv[0] + ":" + kv[1]);
+                    req.setAttribute(kv[0], kv[1]);
+                }
+            }
         }
 
         log.info("Request Sent Server :" + req.getServerName() + ":" + req.getServerPort());
@@ -99,6 +130,7 @@ public class TraceHttpFilter extends AbstractFilter {
         while (qpns.hasMoreElements()) {
             String headerName = qpns.nextElement();
             log.info("  " + headerName + ":" + req.getParameter(headerName));
+            req.setAttribute(headerName, req.getParameter(headerName));
         }
         log.info("Attribute :");
         Enumeration<String> qans = req.getAttributeNames();
@@ -114,6 +146,20 @@ public class TraceHttpFilter extends AbstractFilter {
             sessionId = req.getRequestedSessionId();
         }
         log.info("SessionId :" + sessionId);
+        Cookie cookie = null;
+        Cookie[] cookies = null;
+        // 获取与该域相关的 Cookie 的数组
+        cookies = ((HttpServletRequest) request).getCookies();
+        if( cookies != null ) {
+            for (int i = 0; i < cookies.length; i++) {
+                cookie = cookies[i];
+                log.info("Cookie name:" + cookie.getName());
+//                if((cookie.getName()).compareTo("name") == 0 ) {
+                     //cookie.setMaxAge(0);
+                     //((HttpServletResponse) response).addCookie(cookie);
+//                }
+            }
+        }
         log.info("---------------------------------HttpServletRequest");
 
         ServletContext context = req.getSession().getServletContext();

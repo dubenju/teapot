@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='zh-cn'>
+<head>
+<meta charset="utf-8">
+<title>用户登录</title></head>
+<body bgcolor="#fdf5e6">
+$!{msgobj}
+<form method="post" action="http://192.168.11.32:8080/teapot/t/?_a=1"
+##enctype="text/plain">
+##enctype="text/xml">
+##enctype="application/x-www-form-urlencoded" >
+enctype="application/json" >
+##enctype="multipart/form-data" >
+
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td>
+<h1>用户登录</h1>
+</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr><td>电子信箱</td><td><input type="text" name="email" value="test@123.net$!{user.useracnt}"></td></tr>
+<tr><td>密码</td><td><input type="password" name="passworda" value="test"></td></tr>
+<tr><td>&nbsp;</td><td>
+<table><tr>
+<td><input type="submit" name="login" value="登录"></td><td>&nbsp;</td>
+<td><input type="submit" name="cancel" value="取消"></td>
+<td><a href="http://localhost:8080/teapot/t/?_a=2&_c=new-account" target="_blank">注册</a></td>
+</tr></table>
+</td></tr>
+</table>
+</td></tr></table>
+</form>
+</body>
+</html>

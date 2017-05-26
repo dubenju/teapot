@@ -1,4 +1,4 @@
-package org.teapot.jdbc;
+package org.teapot.db.jdbc;
 /**
  * @author DBJ
  *

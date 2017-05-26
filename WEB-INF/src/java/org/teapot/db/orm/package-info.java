@@ -1,8 +1,8 @@
 /**
- * 
+ *
  */
 /**
  * @author DBJ
  *
  */
-package org.teapot.orm;
+package org.teapot.db.orm;

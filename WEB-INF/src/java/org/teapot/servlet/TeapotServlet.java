@@ -4,12 +4,14 @@
 package org.teapot.servlet;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.Cookie;
@@ -18,11 +20,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.teapot.servlet.controller.IAction;
-import org.teapot.servlet.controller.Init;
-import org.teapot.servlet.controller.Login;
-import org.teapot.servlet.controller.Logout;
-import org.teapot.servlet.controller.Reg;
+import org.apache.velocity.app.Velocity;
+import org.teapot.db.TeapotDb;
+import org.teapot.servlet.controller.Controllsers;
 
 /**
  * @author DBJ
@@ -30,7 +30,7 @@ import org.teapot.servlet.controller.Reg;
  */
 public class TeapotServlet extends HttpServlet {
 
-    private IAction[] actions = null;
+
     /**
      * 1.init(ServletConfig config)
      */
@@ -47,6 +47,17 @@ public class TeapotServlet extends HttpServlet {
 
         log("□1.Servlet init(ServletConfig) config=" + this.getServletConfig()); // null
         super.init(config);
+        try {
+            TeapotDb.init();
+        } catch (InstantiationException | IllegalAccessException
+                | ClassNotFoundException e) {
+            e.printStackTrace();
+            log(e.toString());
+        }
+
+        Velocity.setProperty("file.resource.loader.path", context.getRealPath("/") + "./template/velocity");
+        Velocity.init();
+
         log("□1.Servlet init(ServletConfig) config=" + this.getServletConfig()); // ServletConfig
 
         log("□1.Servlet init(ServletConfig) ServletInfo=" + this.getServletInfo()); // ""
@@ -65,11 +76,7 @@ public class TeapotServlet extends HttpServlet {
         ServletConfig conf = this.getServletConfig();
         ServletContext context = conf.getServletContext();
 
-        actions = new IAction[4];
-        actions[0] = new Init();
-        actions[1] = new Login();
-        actions[2] = new Logout();
-        actions[3] = new Reg();
+
         log("□2.Servlet init() --- end" + Thread.currentThread().getId());
     }
 
@@ -133,20 +140,25 @@ public class TeapotServlet extends HttpServlet {
         log("◆Servlet(Http) doGet() SERVER_NAME     = " + req.getServerName());
         log("◆Servlet(Http) doGet() SERVER_PORT     = " + req.getServerPort());
         log("◆Servlet(Http) doGet() SERVER_SOFTWARE = " + this.getServletContext().getServerInfo());
+        log("◆Servlet(Http) doGet() -----------------------------------");
         Enumeration<String> paramNames = req.getParameterNames();
         while (paramNames.hasMoreElements()) {
             String param = paramNames.nextElement();
             log("◆Servlet(Http) doGet() " + param + " = " +req.getParameter(param));
         }
+        log("◆Servlet(Http) doGet() -----------------------------------");
+//        ServletInputStream sis = req.getInputStream();
+//        sis.close();
+
 
         String action = req.getParameter("_a");
         log("◆Servlet(Http) doGet() action = " + action);
+        int ia = 0;
         if (action != null) {
-            int ia = Integer.parseInt(action);
-            log("◆Servlet(Http) doGet() ia = " + ia);
-            this.actions[ia].action(req, resp);
+            ia = Integer.parseInt(action);
         }
-
+        log("◆Servlet(Http) doGet() ia = " + ia);
+        Controllsers.getInstance().getControllser(ia).action(req, resp);
 
         log("◆Servlet(Http) doGet() --- end" + Thread.currentThread().getId());
 
@@ -223,6 +235,14 @@ public class TeapotServlet extends HttpServlet {
 //        // TODO: handle exception
 //        e.printStackTrace();
 //        }
+
+//      //备份HttpServletRequest
+//        HttpServletRequest httpRequest = (HttpServletRequest)request;
+//        httpRequest = new BufferedServletRequestWrapper( httpRequest );
+//        //使用流
+//        InputStream is = request.getInputStream();
+//        //其他业务逻辑
+
         this.doGet(request, resp);
         log("●Servlet(Http) doPost() --- end" + Thread.currentThread().getId());
     }

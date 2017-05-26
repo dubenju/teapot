@@ -1,4 +1,4 @@
-package org.teapot.jdbc;
+package org.teapot.db.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

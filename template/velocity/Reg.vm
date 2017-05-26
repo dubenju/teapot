@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='zh-cn'>
+<head>
+<meta charset="utf-8">
+<title>用户注册</title></head>
+<body bgcolor="#fdf5e6">
+$!{msgobj}
+<form method="post" action="http://192.168.11.32:8080/teapot/t/?_a=2"
+##enctype="text/plain">
+##enctype="text/xml">
+##enctype="application/x-www-form-urlencoded" >
+enctype="application/json" >
+##enctype="multipart/form-data" >
+
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td>
+<h1>用户注册</h1>
+</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr><td>电子信箱</td><td><input type="text" name="email" value="abcd@163.com$!{user.useracnt}"></td></tr>
+<tr><td>昵称</td><td><input type="text" name="nickname" value="主管$!{user.usernnm}"></td></tr>
+<tr><td>密码</td><td><input type="password" name="passworda" value="abcd"></td></tr>
+<tr><td>确认密码</td><td><input type="password" name="passwordb" value="abcd"></td></tr>
+<tr><td>&nbsp;</td><td><input type="checkbox" name="reg-code">我已阅读并同意《使用协议》</td></tr>
+<tr><td>&nbsp;</td><td><table><tr><td><input type="submit" name="register" value="注册"></td>
+<td>&nbsp;</td><td><input type="submit" name="cancel" value="取消"></td></tr></table></td></tr>
+</table>
+</td></tr></table>
+</form>
+</body>
+</html>

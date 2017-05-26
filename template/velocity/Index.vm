@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang='zh-cn'>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>茶壶开源</title>
+<link rel="stylesheet" type="text/css" href="http://localhost:8080/teapot/resources/css/teapot.css" />
+<script type="text/javascript"src="http://localhost:8080/teapot/resources/js/Menu.js"></script>
+</head>
+<body bgcolor="#fdf5e6">
+<link href="http://localhost:8080/teapot/resources/css/teapot.css" rel="stylesheet" />
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="1024">
+  <!-- Header -->
+  <tr>
+    <td align="center" height="16px">
+
+    <!-- Main Menu Begin -->
+    <div class="mainmenu">
+    <ul id="nav" class="mainmenu">&nbsp;
+        <li class="submenu">
+            <span>首页</span>
+            <div class="submenu">
+            <ul class="submenu">
+                <li class="menuitem"><span>新建(<U>N</U>)</span></li>
+                <li class="menuitem"><span onclick="onopen();">打开(<U>O</U>)</span></li>
+                <li class="menuitem"><span>保存(<U>S</U>)</span></li>
+                <li class="menuitem"><span>另存为(<U>A</U>)</span></li>
+            </ul>
+            </div>
+        </li>&nbsp;
+        <li class="submenu">
+            <span>编辑(<U>E</U>)</span>
+            <div class="submenu">
+            <ul class="submenu">
+                <li class="menuitem"><span>剪切(aaa)</span></li>
+                <li class="menuitem"><span>复制(bbb)</span></li>
+                <li class="menuitem"><span>粘贴()</span></li>
+            </ul>
+            </div>
+        </li>&nbsp;
+        <li class="submenu">
+            <span>表示(<U>V</U>)</span>
+            <div class="submenu">
+            <ul class="submenu">
+                <li class="menuitem"><span>二级菜单</span></li>
+                <li class="menuitem">
+                <span>二级菜单</span>
+                <div class="submenu">
+                    <ul class="submenu">
+                        <li ><span>三级菜单</span></li>
+                        <li ><span>三级菜单</span></li>
+                        <li ><span>三级菜单</span></li>
+                        <li ><span>三级菜单</span></li>
+                        <li ><span>三级菜单</span></li>
+                    </ul>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </li>
+        <li class="submenu">
+            <span>检索(<U>S</U>)</span>
+            <div class="submenu">
+            <ul class="submenu">
+                <li class="menuitem"><span>剪切</span></li>
+                <li class="menuitem"><span>复制</span></li>
+                <li class="menuitem"><span>粘贴</span></li>
+            </ul>
+            </div>
+        </li>&nbsp;
+        <li class="submenu">
+            <span>窗口(<U>W</U>)</span>
+            <div class="submenu">
+            <ul class="submenu">
+                <li class="menuitem"><span>剪切</span></li>
+                <li class="menuitem"><span>复制</span></li>
+                <li class="menuitem"><span>粘贴</span></li>
+            </ul>
+            </div>
+        </li>&nbsp;
+        <li class="submenu">
+            <span>帮助(<U>H</U>)</span>
+            <div class="submenu">
+            <ul class="submenu">
+                <li class="menuitem"><span>剪切</span></li>
+                <li class="menuitem"><span>复制</span></li>
+                <li class="menuitem"><span>粘贴</span></li>
+            </ul>
+            </div>
+        </li>&nbsp;
+#if("$!{userNnm}" =="")
+        <li class="submenu">
+            <span>
+                <a href="http://192.168.11.32:8080/teapot/t/?_a=1&_c=new-account" target="_blank">登录</a>
+            </span>
+        </li>&nbsp;
+        <li class="submenu">
+            <span>
+                <a href="http://192.168.11.32:8080/teapot/t/?_a=2&_c=new-account" target="_blank">注册</a>
+            </span>
+        </li>&nbsp;
+#else   <li class="submenu">&nbsp;&nbsp;您好！$!{userNnm}&nbsp;&nbsp;
+        </li>&nbsp;
+        <li class="submenu">
+            <span>
+                <a href="http://192.168.11.32:8080/teapot/t/?_a=4&_c=$!{userid}&userid=$!{user.userid},$!{user.getUserId()},$!{user.UserId},$!{user.userId}" target="_blank">我的空间</a>
+            </span>
+        </li>&nbsp;
+        <li class="submenu">
+            <span>
+                <a href="http://192.168.11.32:8080/teapot/t/?_a=3&_c=new-account" target="_blank">退出</a>
+            </span>
+        </li>&nbsp;
+#end
+    </ul>
+    <script language="javascript">
+        new Menu('nav');
+        window.status="Some text in the status bar!!"
+    </script>
+    </div>
+    <!-- Main Menu End -->
+
+    </td>
+  </tr>
+  <!-- Header -->
+  <!-- Logo -->
+  <tr>
+    <td align="center" height="44px">
+      <table border="0" cellpadding="0" cellspacing="0" align="left" height="44px">
+        <tr>
+          <td width="200px">
+            <a href="http://localhost:8080/teapot/" target="_blank">
+              <img src="http://localhost:8080/teapot/resources/image/logo.png" height="44px" width="200px" alt="http://localhost:8080/teapot/"></img>
+            </a>
+          </td>
+          <td width="624px" align="center">
+            <input type="text" size="70" />
+            <input type="button" value="查询" />
+          </td>
+          <td width="200px">&nbsp;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- Lancher -->
+  <tr>
+    <td align="center" height="20px" bgcolor="#FF0000"><marquee scrollamount=2 onmouseover="stop()" onmouseout="start()"><a href="https://my.oschina.net/dubenju">滚动的文字</a></marquee>
+    </td>
+  </tr>
+  <!-- Main -->
+  <tr>
+    <td align="center" height="540px">
+      <table border="1" cellpadding="0" cellspacing="0" align="center" height="540px">
+        <tr>
+          <td width="200px" bgcolor="#00FF00">分类
+          </td>
+          <td width="624px" >商品
+
+
+<div>
+<table>
+<tr>
+<td><a href="http://localhost:8080/teapot/html5/html-audio.html">html-audio</a>
+</td>
+</tr>
+</table>
+</div>
+
+<div style="color:#00FF00">
+<table>
+<tr>
+<td><a href="http://localhost:8080/teapot/html5/html-audio.html">html-audio</a>
+</td>
+</tr>
+</table>
+</div>
+
+<div>
+<table>
+<tr>
+<td><a href="http://localhost:8080/teapot/html5/html-audio.html">html-audio</a>
+</td>
+</tr>
+</table>
+</div>
+
+          </td>
+          <td width="200px">留言
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- somthing -->
+  <tr>
+    <td align="center" height="40px" bgcolor="#00FFFF">&nbsp;
+    </td>
+  </tr>
+  <!-- Footer -->
+  <tr>
+    <td align="center">xx公司&nbsp;版权所有&nbsp;Copyright&nbsp;©2017&nbsp;xx&nbsp;Inc.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
